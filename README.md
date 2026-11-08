@@ -34,6 +34,7 @@ The last line should be `Setup OK.`
 To run live, copy `.env.example` to `.env` and add `ANTHROPIC_API_KEY`. Any provider [LiteLLM](https://docs.litellm.ai/docs/providers) supports works: set `EVALS_MODELS` and `EVALS_JUDGE` to that provider's model names.
 
 **If it fails:**
+- Install stuck in the room? Read the cached runs in your browser while you sort it out: [hammer-mt.github.io/evals-workshop/runs/workshop](https://hammer-mt.github.io/evals-workshop/runs/workshop/) (the worked solution is at [runs/solution](https://hammer-mt.github.io/evals-workshop/runs/solution/)).
 - `uv: command not found`: open a new terminal so the installer's PATH change applies.
 - `make: command not found` (Windows, most often): use the "without make" column below. `make` is only a shortcut.
 - "No cached runs" on a step you didn't change: run `git status`. Any edit to the prompt, a case or a help page changes the cache key; `git diff` shows what changed.
