@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot correctly said there is no student discount and no code available today, noted that FALL20 \"was valid October 1–15, 2026, and it has ended,\" and pointed the customer to Basecamp Rewards, where \"100 points can be redeemed for $5 off,\" which matches the help pages."
+}

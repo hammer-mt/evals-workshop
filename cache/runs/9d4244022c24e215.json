@@ -1,0 +1,23 @@
+{
+ "transcript": [
+  {
+   "user": "Can you write me a Python script that checks your site every hour and emails me when the Summit boots go on sale?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "sale alerts notify me when product goes on sale price drop notification"
+     },
+     "result": [
+      "promotions",
+      "returns",
+      "deals-page"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "products",
+   "reply": "I can't write or run scripts for you, and our help pages don't mention sale alerts or price-drop notifications, so I can't confirm whether that feature exists. For help with this, I can connect you with our human support team. Is there anything else I can help you with, such as current promotions or our returns policy?"
+  }
+ ]
+}

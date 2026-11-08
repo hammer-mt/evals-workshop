@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human, and none of the handoff situations applied; it answered itself and only offered help: \"If you'd like, I can connect you with a member of our support team to discuss our footwear options.\""
+}

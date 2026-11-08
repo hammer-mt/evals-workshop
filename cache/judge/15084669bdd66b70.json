@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human and handled the out-of-scope request itself; it only offered a handoff (\"If you'd like to ask about alerts, I can connect you with human support\"), and none of the escalation situations applied."
+}

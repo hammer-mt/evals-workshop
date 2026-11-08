@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "The bot said \"If you'd like to speak with a human team member, I can connect you with one,\" and its later ticket and email reply (\"A team member will reply by email within 1 business day\") never mentions that live chat and phone are closed until Monday, so the PASS condition is not met."
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human and answered the expired-promo question itself from the promotion terms, saying \"Our official promotion terms, captured October 20, say it has ended, so I'm not able to apply it to your Summit GTX Hiking Boot.\" The customer never asked for a person or reported a defect."
+}

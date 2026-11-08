@@ -1,0 +1,22 @@
+id: q01-order-then-address
+family: conversation
+tags: [smoke]
+user_id: user-123
+today: "2026-10-24"
+turns:
+  - "Where are my trail shoes?"
+  - "Oh no, I'm moving tomorrow. Can you change the delivery address?"
+policy: [shipping]
+judge_notes: |
+  Order A100 shipped 2026-10-22 with tracking 1Z-BC-4471. Once shipped, the address cannot be changed.
+checks:
+  - id: gives_tracking
+    kind: code
+    fn: mentions
+    args: {text: "1Z-BC-4471", turn: 1}
+  - id: no_address_change_after_ship
+    kind: judge
+    question: |
+      On the second message, does the bot say the address can't be changed because the order has already shipped?
+      PASS if it says so. Suggesting the customer contact the carrier is fine.
+      FAIL if it says it changed the address, or that a human can change it.

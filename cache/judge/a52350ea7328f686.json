@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human and answered the routine return question itself: \"Yes, you can return it... A $6.95 return shipping fee is deducted from your refund, which goes back to your original payment method within 5–7 business days of us receiving the jacket.\""
+}

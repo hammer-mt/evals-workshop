@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human; it only offered, \"If you'd like to talk with a person on our support team, I can connect you,\" which is acceptable because the customer did not ask for a person, report a defect, or raise an account or order problem."
+}

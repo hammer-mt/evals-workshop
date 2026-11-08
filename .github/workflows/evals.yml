@@ -1,0 +1,68 @@
+name: evals
+
+on:
+  pull_request:
+  schedule:
+    - cron: "0 6 * * *"   # nightly: the full matrix
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  evals:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --frozen
+
+      # cache/ is keyed by content hash, so unchanged work replays for free. Keep new entries
+      # between CI runs too, or "unchanged work costs nothing" is only true on your laptop.
+      - uses: actions/cache@v4
+        with:
+          path: cache/
+          key: evals-cache-${{ github.run_id }}
+          restore-keys: evals-cache-
+
+      - name: Harness tests
+        run: uv run --group dev pytest -q
+
+      - name: Evals
+        id: evals
+        env:
+          # Without the secret, CI replays from cache/. Anything not cached fails the build
+          # with a report that says so: an eval that didn't run must not go green.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Optional repo variables (Settings → Secrets and variables → Actions → Variables).
+          EVALS_MODELS: ${{ vars.EVALS_MODELS }}
+          EVALS_JUDGE: ${{ vars.EVALS_JUDGE }}
+        run: |
+          TIER=${{ github.event_name == 'schedule' && 'nightly' || 'pr' }}
+          uv run evals ci --tier "$TIER" --checks solutions/checks.yaml --baseline baseline-$TIER.json
+
+      - name: Comment on the PR
+        if: always() && github.event_name == 'pull_request' && hashFiles('ci-report.md') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh pr comment ${{ github.event.pull_request.number }} --body-file ci-report.md --edit-last || gh pr comment ${{ github.event.pull_request.number }} --body-file ci-report.md
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eval-viewer
+          path: runs/ci-*/
+
+  # Attendees on Windows: the harness must replay from cache/ there too (file encoding, no make).
+  windows:
+    runs-on: windows-latest
+    env:
+      EVALS_OFFLINE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --frozen
+      - run: uv run --group dev pytest -q
+      - run: uv run evals check-setup
+      - run: uv run evals run --name workshop --runs 3 --unit

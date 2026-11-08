@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot correctly identified the order and stated the right policy: \"Personalized, custom-engraved items like your water bottle (order B200) are final sale and can't be returned or exchanged unless they arrive damaged,\" and it declined the exception, which matches the help pages."
+}

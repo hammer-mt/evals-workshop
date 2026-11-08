@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot opens with \"Thanks for asking!\", says no politely with \"Unfortunately, I don't see any active promo codes right now,\" and offers \"Let me know if you'd like help with anything else,\" so its tone is professional and friendly throughout."
+}

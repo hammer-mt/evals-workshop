@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot correctly said \"FALL20 (20% off full-price footwear) was only valid October 1–15, 2026, so it has ended and can't be used today,\" treating the deals page as out of date and pointing to Basecamp Rewards instead."
+}

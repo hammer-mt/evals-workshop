@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot's claims match the promotion terms page (\"According to our promotion terms, it was valid only October 1–15, 2026, and has ended, even though the deals page still shows it\" and \"you earn 1 point per $1 spent, and 100 points can be redeemed for $5 off\"); the deals page conflicts, but the case notes confirm the promotion terms are correct and the bot named the stale page rather than following it."
+}

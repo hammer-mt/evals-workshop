@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "After already creating a ticket for the faulty boot in turn 1, the bot called escalate_to_human again to answer \"So I can't just get my money back?\" — a question the help pages answer directly (\"Cash refunds are not offered for warranty claims\") — which created a second ticket (\"Ticket created. A human agent will reply by email within 1 business day.\")."
+}

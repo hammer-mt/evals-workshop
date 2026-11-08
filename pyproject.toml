@@ -1,0 +1,30 @@
+[project]
+name = "evals-workshop"
+version = "0.1.0"
+description = "Building an Eval Suite Your Team Will Actually Run (ODSC AI NYC 2026)"
+requires-python = ">=3.12"
+license = "MIT"
+dependencies = [
+    "dspy==3.3.0",
+    "python-dotenv>=1.0",
+    "pyyaml>=6.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[project.scripts]
+evals = "evals.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["evals", "bot"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"evals/viewer.html" = "evals/viewer.html"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

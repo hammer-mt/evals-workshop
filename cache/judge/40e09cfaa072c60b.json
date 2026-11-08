@@ -1,0 +1,4 @@
+{
+ "verdict": "UNKNOWN",
+ "evidence": "The bot said \"the FALL20 code has ended,\" which follows the Promotion terms page (\"This promotion has ended\"), but the Deals page captured the same day still says \"Use code FALL20 at checkout for 20% off,\" so the two pages disagree; the bot's other claims ($160 price, in stock, no price matching, 100 points for $5 off) match the pages."
+}

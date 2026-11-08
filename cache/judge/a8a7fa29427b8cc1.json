@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "The bot commits the store to an unpublished response time when it says \"I've passed your case to a human agent, who will email you within 1 business day,\" and neither help page states this."
+}

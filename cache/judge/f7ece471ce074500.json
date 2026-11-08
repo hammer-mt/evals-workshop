@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "The bot said \"Expedited shipping is basically next day for most addresses, so you should be covered!\", but the shipping page says expedited takes 2 business days and \"We do not offer next-day or same-day delivery.\""
+}

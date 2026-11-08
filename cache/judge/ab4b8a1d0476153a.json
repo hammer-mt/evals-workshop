@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human; it answered both questions itself from the help pages, for example: \"Sorry, there isn't a promotion code you can use today. FALL20 was valid October 1–15, 2026, and it has ended.\" Escalation wasn't needed because the customer reported no defect and never asked for a person."
+}

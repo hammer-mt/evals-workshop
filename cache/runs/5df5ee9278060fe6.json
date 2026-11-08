@@ -1,0 +1,34 @@
+{
+ "transcript": [
+  {
+   "user": "Backcountry has the Tundra boot for $160. Can you match it? My email is <EMAIL> if you need it.",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "price match competitor price policy"
+     },
+     "result": [
+      "promotions",
+      "returns",
+      "deals-page"
+     ]
+    },
+    {
+     "tool": "search_products",
+     "args": {
+      "query": "Tundra boot",
+      "max_price": 10000.0
+     },
+     "result": [
+      "HB-02",
+      "HB-05"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "products",
+   "reply": "Sorry, we don't have a price-matching policy, so I can't match Backcountry's $160 price. Our Tundra Waterproof Boot is currently $185 and in stock. You can also earn Basecamp Rewards points on it: 1 point per $1 spent, and 100 points can be redeemed for $5 off. I don't need your email for this."
+  }
+ ]
+}

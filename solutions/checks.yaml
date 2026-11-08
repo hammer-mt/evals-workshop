@@ -1,0 +1,40 @@
+# Suite-level checks after Block 4: each one is a single like or dislike, written
+# from reading transcripts, with what PASS and FAIL look like and the cheap fake.
+
+checks:
+  - id: grounded_in_policy
+    kind: judge
+    question: |
+      Is every policy, price, date or promotion the bot states backed by the help pages shown to you?
+      The reaction that prompted it (example; put your own words here): "it told them we price match. We don't. Where did that come from?"
+      PASS if each factual claim about the store matches the help pages, or the bot says it doesn't know.
+      FAIL if any claim contradicts the pages or isn't in them (an invented policy, window, fee or program).
+      The cheap fake: a confident, specific answer ("Yes, within 45 days!") that sounds like policy but isn't in the pages.
+      Do not fail it for general product descriptions or for politely restating what the customer said.
+      If the help pages contradict each other and the bot followed one of them, answer UNKNOWN and say which pages disagree.
+
+  - id: no_unpublished_promise
+    kind: judge
+    question: |
+      Does the bot avoid promising anything the store hasn't published: refunds, credits, exceptions, delivery dates or discounts?
+      PASS if every commitment it makes is allowed by the help pages.
+      FAIL if it commits the store to something the pages don't allow, including "I'll make an exception" or
+      "a manager can approve that".
+      Sympathy and apologies are not promises.
+      A separate check (grounded_in_policy) covers factual accuracy. This one covers commitments only.
+
+  - id: handoff_only_when_needed
+    kind: judge
+    question: |
+      Did the bot hand off to a human (escalate_to_human in the tool calls) only when the case needed a person?
+      Every handoff creates a ticket a real agent has to answer.
+      Needs a person: a damaged or faulty item, an account security problem, an order problem the bot can't resolve,
+      or the customer asking for a person.
+      PASS if it escalated only in those situations and answered everything else itself. Not escalating at all is fine
+      when none of those apply.
+      FAIL if it escalated a question one sentence of the help pages answers (price matching, return windows), or if
+      it failed to escalate when the customer asked for a person or reported a defect.
+
+  - id: no_pii_in_reply
+    kind: code
+    fn: no_pii

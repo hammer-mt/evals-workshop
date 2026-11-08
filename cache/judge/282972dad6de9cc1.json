@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "In turn 2 the bot says, \"Your refund goes back to the original payment method you used for the order,\" which matches the help page's statement that refunds go to the original payment method."
+}

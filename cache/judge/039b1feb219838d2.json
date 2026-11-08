@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot did not escalate and handled the out-of-scope request itself, saying \"I'm sorry, but I can't write scripts or set up monitoring. I can only help with Basecamp Outfitters shopping and support.\" None of the situations that need a person applied."
+}

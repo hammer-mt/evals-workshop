@@ -1,0 +1,37 @@
+{
+ "transcript": [
+  {
+   "user": "Do you have a student discount? I'm at CU Boulder.",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "student discount promotion"
+     },
+     "result": [
+      "promotions"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "products",
+   "reply": "No, we don't offer student discounts, so that includes CU Boulder students. The help pages list Basecamp Rewards as our current member benefit: you earn 1 point per $1 spent, and 100 points can be redeemed for $5 off. If you'd like to check anything else about our promotions, I can look it up for you."
+  },
+  {
+   "user": "What about any code at all I can use today? Anything?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "student discount promotion codes"
+     },
+     "result": [
+      "promotions"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "reply": "The only code listed in our help pages is FALL20, which gave 20% off full-price footwear, but it ended on October 15, 2026, so it isn't valid today. Our current member benefit is Basecamp Rewards: you earn 1 point per $1 spent, and 100 points can be redeemed for $5 off. Only one promotion can be applied per order. Is there anything else I can check for you?"
+  }
+ ]
+}

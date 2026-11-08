@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot refused the return and only offered a review: \"Si los calcetines tuvieran un defecto de fabricación, avísame y te conecto con una persona del equipo de soporte para revisarlo.\" This matches the published route (\"If a worn item is faulty, see the warranty policy\") and does not promise a refund, credit, or exception."
+}

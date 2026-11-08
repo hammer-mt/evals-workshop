@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human and handled the discount questions itself with the help pages, saying \"Basecamp Outfitters doesn't offer student, military, or employer discounts\" and \"I don't see any active promo codes right now.\" Nothing in the conversation called for a person."
+}

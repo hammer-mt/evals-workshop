@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot's only policy claim, \"personalized items are final sale unless they arrive damaged,\" matches the returns page exactly, and its order details (B200, engraving \"Sam\") come from the tool results rather than invented policy."
+}

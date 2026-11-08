@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot answered the worn-item question itself without escalating (\"no podemos aceptar devoluciones de artículos que han sido usados o desgastados al aire libre\"), and no defect or request for a person had been raised."
+}

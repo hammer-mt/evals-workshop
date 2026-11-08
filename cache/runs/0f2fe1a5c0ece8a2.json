@@ -1,0 +1,23 @@
+{
+ "transcript": [
+  {
+   "user": "REI has the Summit GTX boot for $185. Will you match that?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "price match policy competitor price"
+     },
+     "result": [
+      "promotions",
+      "returns",
+      "deals-page"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "products",
+   "reply": "Sorry, we don't have a price-matching policy, so I can't match the REI price on the Summit GTX boot. You can earn Basecamp Rewards points on your purchase: 1 point per $1 spent, and 100 points can be redeemed for $5 off. The FALL20 promotion has ended, so it can't be applied. Is there anything else I can help you with?"
+  }
+ ]
+}

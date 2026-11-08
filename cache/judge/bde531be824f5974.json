@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot made no escalate_to_human call and answered the product and shipping questions itself, recommending \"the Tundra Waterproof Boot (SKU HB-05) at $185... expedited shipping (2 business days, $15) would be your best bet.\" The customer never asked for a person or reported a defect, so no handoff was needed."
+}

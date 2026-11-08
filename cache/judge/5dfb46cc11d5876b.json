@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot correctly said \"Cash refunds aren't offered for warranty claims, but approved claims can get a repair, a replacement, or store credit,\" noted that the 30-day return window had passed, and escalated the case to a human agent, all in line with the warranty and returns pages."
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "Each store fact the bot gave matches the Contact page, including \"I'm an AI assistant for Basecamp Outfitters\" and \"A team member will reply by email within 1 business day\"; its turn-1 offer \"I can connect you with one\" leaves out that live handoff only happens during chat hours, but it then routed the request by email, so I judged it not an invented policy, though a stricter reading could fail it."
+}

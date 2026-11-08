@@ -1,0 +1,47 @@
+{
+ "transcript": [
+  {
+   "user": "Hi, the rain jacket I got last week is too big. I haven't worn it, tags still on. Can I send it back?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "return policy size exchange unworn tags attached"
+     },
+     "result": [
+      "returns",
+      "promotions"
+     ]
+    },
+    {
+     "tool": "get_orders",
+     "args": {
+      "user_id": "user-456"
+     },
+     "result": "[\n {\n  \"order_id\": \"B201\",\n  \"items\": \"Storm Shell Rain Jacket\",\n  \"total\": \"$160.00\",\n  \"status\": \"delivered\",\n  \"delivered\": \"2026-10-18\"\n },\n {\n  \"order_id\": \"B200\",\n  \"items\": \"Custom Engraved Water Bottle (engraving: 'Sam')\",\n  \"total\": \"$34.00\",\n  \"status\": \"delivered\",\n  \"delivered\": \"2026-10-20\"\n }\n]"
+    }
+   ],
+   "guardrail": null,
+   "department": "returns",
+   "reply": "Yes, you can return it. Your Storm Shell Rain Jacket was delivered on October 18, so it's within our 30-day return window, which runs through November 17. You can also exchange it for a different size at no cost. If you'd rather have a refund, a $6.95 return shipping fee will be deducted, and the refund goes back to your original payment method within 5–7 business days after the return reaches our warehouse. Would you like to exchange it for a size that fits?"
+  },
+  {
+   "user": "Ok great. How long until I get my money back, and where does it go?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "return refund processing time and refund method for unworn items"
+     },
+     "result": [
+      "returns",
+      "contact",
+      "warranty"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "reply": "Refunds go back to your original payment method within 5–7 business days after the return arrives at our warehouse. The $6.95 return shipping fee will be deducted from the refund. Please note that the return window is 30 days from delivery, so it's best to ship it back soon."
+  }
+ ]
+}

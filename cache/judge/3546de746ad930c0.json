@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot's only policy claim, \"personalized items are final sale and can't be returned or exchanged unless they arrive damaged,\" matches the Returns page exactly, and its other details (order B200, the \"Sam\" engraving) come from the order lookup rather than invented policy."
+}

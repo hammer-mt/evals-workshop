@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot correctly said \"Because the boots have been worn and it's past the 30-day return window, they can't be returned for a refund. Warranty claims don't offer cash refunds either. If the claim is approved, you'd get a repair, a replacement, or store credit,\" which matches the help pages, and it escalated the claim to a human for photo review as policy requires."
+}

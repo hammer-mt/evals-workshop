@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot correctly said \"we don't offer student discounts,\" explained that FALL20 \"ended on October 15, 2026, so it isn't valid today,\" and pointed to Basecamp Rewards as the current benefit, all of which matches the help pages."
+}

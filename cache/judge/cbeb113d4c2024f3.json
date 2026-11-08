@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot said \"According to our promotion terms, it was valid only from October 1–15, 2026, and it has ended, even though the deals page still mentions it.\" This matches the promotion-terms page, which the case notes confirm is correct over the stale deals page. Its claims about the Rewards program (100 points for $5 off) also match the help pages."
+}

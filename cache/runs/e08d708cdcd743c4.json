@@ -1,0 +1,84 @@
+{
+ "transcript": [
+  {
+   "user": "I need waterproof hiking boots under $150, and they have to reach me in Colorado by Friday the 30th.",
+   "tools": [
+    {
+     "tool": "search_products",
+     "args": {
+      "query": "waterproof hiking boots",
+      "max_price": 150.0
+     },
+     "result": [
+      "HB-03",
+      "WB-01"
+     ]
+    },
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "shipping delivery times Colorado"
+     },
+     "result": [
+      "shipping",
+      "returns",
+      "warranty"
+     ]
+    },
+    {
+     "tool": "search_products",
+     "args": {
+      "query": "hiking boots",
+      "max_price": 150.0
+     },
+     "result": []
+    },
+    {
+     "tool": "search_products",
+     "args": {
+      "query": "waterproof boots",
+      "max_price": 150.0
+     },
+     "result": [
+      "HB-03",
+      "WB-01"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "products",
+   "reply": "The only waterproof boot I found under $150 is the Cascade Waterproof Hiker ($145), but it's currently out of stock, so I can't place an order for it. I also can't confirm delivery by Friday, October 30, because I don't have a restock date, and our help pages only list standard (3–5 business days) and expedited (2 business days) shipping. Please check back later for restock, or I can connect you with a human agent to ask about availability."
+  },
+  {
+   "user": "Hmm, ok, I can stretch the budget to $200. What would you recommend?",
+   "tools": [
+    {
+     "tool": "search_products",
+     "args": {
+      "query": "waterproof hiking boots",
+      "max_price": 200.0
+     },
+     "result": [
+      "HB-03",
+      "HB-05",
+      "RJ-01",
+      "WB-01"
+     ]
+    },
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "shipping delivery times Colorado cutoff"
+     },
+     "result": [
+      "shipping",
+      "returns",
+      "warranty"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "reply": "The Tundra Waterproof Boot ($185) is the best match: it's waterproof, in stock, and within your $200 budget. Orders over $75 ship free by standard delivery, which takes 3–5 business days after shipping from Denver within 1 business day. Expedited shipping ($15) takes 2 business days, so it's your best chance at Friday, October 30, but our help pages don't say whether the clock starts at order or shipment, so I can't promise that date. If you'd like certainty on timing, I can connect you with a human agent."
+  }
+ ]
+}

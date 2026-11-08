@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot answered in Spanish, matching the help page's rule that worn items cannot be returned and pointing to the warranty policy for faulty items: \"Lamentablemente, los artículos que se han usado al aire libre no se pueden devolver, así que los calcetines que usaste en la caminata no son elegibles para devolución.\""
+}

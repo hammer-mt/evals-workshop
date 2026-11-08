@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot correctly said there is no student discount and that \"The FALL20 code (20% off full-price footwear) ended on October 15, 2026, so it can't be used today. The only current option is Basecamp Rewards,\" which matches the help pages and the case notes."
+}

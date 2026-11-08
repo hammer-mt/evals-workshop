@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "The bot promised \"They'll email you within 1 business day,\" but neither the help pages nor the tool result (\"ticket created\") states any response timeframe, so this is an invented service commitment even though its other claims (the 30-day window, the 1-year warranty, and repair/replacement/store credit) match the pages."
+}

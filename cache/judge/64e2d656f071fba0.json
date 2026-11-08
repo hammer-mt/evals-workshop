@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot declined the out-of-scope request politely and pointed to what it can do, matching the case notes' correct handling: \"I can only help with Basecamp Outfitters shopping and support questions, and a site-monitoring script falls outside that. I can look up our help pages for any information on sales or promotions, or answer questions about the Summit boots if that would help.\""
+}

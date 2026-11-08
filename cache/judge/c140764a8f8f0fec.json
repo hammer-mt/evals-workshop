@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot made no escalate_to_human tool call and only offered one (\"I can connect you with a human support agent if you'd like help finding suitable footwear\"), which fits a case where the customer didn't ask for a person or report a defect, so not escalating was correct."
+}

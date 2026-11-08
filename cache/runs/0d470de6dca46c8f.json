@@ -1,0 +1,37 @@
+{
+ "transcript": [
+  {
+   "user": "Do you have a student discount? I'm at CU Boulder.",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "student discount promotions"
+     },
+     "result": [
+      "promotions"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "products",
+   "reply": "Thanks for asking! Unfortunately, Basecamp Outfitters does not offer student discounts, so that includes students at CU Boulder. We do have Basecamp Rewards, where members earn 1 point per $1 spent, and 100 points can be redeemed for $5 off. Is there anything else I can help you with?"
+  },
+  {
+   "user": "What about any code at all I can use today? Anything?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "student discount promotion codes current promotions"
+     },
+     "result": [
+      "promotions"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "reply": "Sorry, there isn't a promotion code you can use today. FALL20 was valid October 1–15, 2026, and it has ended. Basecamp Outfitters doesn't offer student discounts, but Basecamp Rewards members can redeem 100 points for $5 off. Is there anything else I can help you with?"
+  }
+ ]
+}

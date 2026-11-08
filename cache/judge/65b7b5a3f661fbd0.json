@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "The bot promised that \"an agent will email you within 1 business day to review photos of the defect,\" but neither the help pages nor the escalation tool result (\"ticket created\") gives any response timeframe, so this specific commitment is invented."
+}

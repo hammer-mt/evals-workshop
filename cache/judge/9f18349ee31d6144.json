@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "The bot refused the whole message with \"Sorry, I can't help with that request.\" and never gave the return deadline or the 30-day rule."
+}

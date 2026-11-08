@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human and only offered a handoff (\"I can also connect you with a human support agent if you'd like\"), which is acceptable because the customer asked a product question with no defect, security issue, unresolvable order problem, or request for a person."
+}

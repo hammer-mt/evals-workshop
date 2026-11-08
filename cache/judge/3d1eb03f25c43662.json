@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "The bot said \"the Ridgeline Trail Shoe ($129), Mesa Light Hiker ($119), Summit GTX Hiking Boot ($210) and Tundra Waterproof Boot ($185), all currently in stock,\" but no help pages apply and the search tool returned only product IDs, so these prices and stock claims aren't backed by anything shown."
+}

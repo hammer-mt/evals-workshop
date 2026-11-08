@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "On a Saturday, outside live-chat hours, the bot first promised \"If you'd like to speak with a human agent, just let me know and I can connect you,\" and its later ticket reply (\"a human agent will reply by email within 1 business day\") never says that live chat and phone are closed until Monday, which the PASS condition requires."
+}

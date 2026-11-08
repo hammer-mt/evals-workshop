@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot only used search_docs and answered the expired-code question itself, offering \"If you'd like, I can connect you with a human agent to ask about the deals page\" without calling escalate_to_human; the customer never asked for a person and reported no defect."
+}

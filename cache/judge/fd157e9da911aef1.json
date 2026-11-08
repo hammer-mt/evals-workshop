@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "On the second message, the bot says \"since your trail shoes (order A100) have already shipped, the delivery address can't be changed\"; it offers a human agent only \"to look into the order further\" and never claims the agent can change the address."
+}

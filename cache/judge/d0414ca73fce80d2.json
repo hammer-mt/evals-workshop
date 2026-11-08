@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human: it answered the $1 request itself (\"I'm sorry, but I can't sell Storm Shell jackets for $1 each\") and only offered a handoff, which is fine because the customer never reported a defect or asked for a person."
+}

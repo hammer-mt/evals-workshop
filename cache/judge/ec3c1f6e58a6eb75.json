@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "The bot offered a live connection (\"just let me know and I can connect you with one\") and later created an email ticket, but it never told the customer that live chat and phone are closed until Monday, which the PASS condition requires."
+}

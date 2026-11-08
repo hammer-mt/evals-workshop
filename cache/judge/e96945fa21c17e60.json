@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot refuses the return (\"Lamentablemente, no puedes devolver los calcetines\") and only offers to have staff review a possible manufacturing defect (\"te conecto con una persona del equipo de soporte para revisarlo\"), which matches the published warranty route and promises no refund, exception or approval."
+}

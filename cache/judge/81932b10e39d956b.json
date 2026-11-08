@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot answered the price-match question itself without calling escalate_to_human: \"Sorry, we don't have a price-matching policy, so I can't match Backcountry's $160 price.\" The customer did not ask for a person or report a defect, so no handoff was needed."
+}

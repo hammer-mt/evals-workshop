@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human, which was right because nothing in the case needed a person: the customer reported an unworn jacket that was too big, did not ask for a human, and the bot answered from policy itself (\"Yes, you can send it back... within our 30-day return window\")."
+}

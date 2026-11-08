@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "When the customer asked \"So I can't just get my money back?\", a question the warranty page answers in one sentence, the bot called escalate_to_human a second time and created a duplicate ticket, even though its own reply says \"your case is with our support team.\""
+}

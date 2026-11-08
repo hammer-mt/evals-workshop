@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "Every store claim the bot made matches the promotion-terms page: \"we don't price-match. The FALL20 promotion has also ended, and it only applied to footwear... 100 points can be redeemed for $5 off.\" The $160.00 price is product data from the search_products lookup, not a policy claim."
+}

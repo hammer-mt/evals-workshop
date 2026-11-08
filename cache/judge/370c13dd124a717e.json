@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human; it answered the expired-code question itself (\"FALL20 was valid only October 1–15, 2026, and has ended\") and only offered a handoff (\"If you'd like, I can connect you with a member of our human support team\"), which is fine because the customer never asked for a person or reported a defect."
+}

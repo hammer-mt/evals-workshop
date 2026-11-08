@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human and answered the worn-boot refund request from policy itself (\"I can't process a full refund for boots that have been worn... I can't make an exception based on a previous conversation\"); the customer neither asked for a person nor reported a defect, so no handoff was needed."
+}

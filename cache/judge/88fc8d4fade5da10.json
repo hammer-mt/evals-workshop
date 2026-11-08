@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human and answered the return question itself — \"Yes, you can send it back... you're well within the 30-day return window\" — which is correct because the customer reported no defect and never asked for a person."
+}

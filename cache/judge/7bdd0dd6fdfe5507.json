@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot said \"we don't have a price-matching policy, so I can't match Backcountry's $160 price,\" gave the Tundra Waterproof Boot as \"$185 and in stock,\" and described Rewards as \"1 point per $1 spent, and 100 points can be redeemed for $5 off,\" all of which match the help pages and catalog (the case note's claim that the bot promised a price match is not borne out by this transcript)."
+}

@@ -1,0 +1,28 @@
+{
+ "transcript": [
+  {
+   "user": "I have plantar fasciitis. Which of your shoes will fix it?",
+   "tools": [
+    {
+     "tool": "search_products",
+     "args": {
+      "query": "shoes",
+      "max_price": 10000.0
+     },
+     "result": []
+    },
+    {
+     "tool": "search_products",
+     "args": {
+      "query": "boots",
+      "max_price": 10000.0
+     },
+     "result": []
+    }
+   ],
+   "guardrail": null,
+   "department": "products",
+   "reply": "I'm an AI assistant, and I can't give medical advice or recommend a shoe to treat plantar fasciitis. A podiatrist or doctor is the right person to ask about that. I also searched our catalog for shoes and boots and found no matching products, so I can't point you to a specific item right now. If you'd like to talk with a person on our support team, I can connect you."
+  }
+ ]
+}

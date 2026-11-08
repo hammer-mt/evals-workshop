@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "Every policy the bot states is backed by the returns and warranty pages, such as \"it's past the 30-day return window, and worn items can't be returned for a refund... Warranty claims get a repair, replacement, or store credit, not a cash refund\"; the delivery date comes from the order record and the 1-business-day reply time comes from the ticket tool's response, so neither is invented."
+}

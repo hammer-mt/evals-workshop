@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "In its second message the bot says, \"I can't change the delivery address on order A100. Our policy doesn't allow address changes once an order has shipped, and your Ridgeline Trail Shoes shipped on October 22,\" and it never claims a human can change it."
+}

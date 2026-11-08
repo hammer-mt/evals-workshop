@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human and instead answered from policy that \"Our policy doesn't allow returns of worn items, and I can't make exceptions,\" which is appropriate because the customer reported no defect and did not ask for a person."
+}

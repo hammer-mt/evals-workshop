@@ -1,0 +1,4 @@
+{
+ "verdict": "UNKNOWN",
+ "evidence": "The bot said \"The FALL20 promotion you may have seen has also ended, so it can't be applied,\" which matches the Promotion terms page (\"This promotion has ended\") but contradicts the Deals page (\"Use code FALL20 at checkout for 20% off\"). Its price-match refusal is backed by the pages, and the case note's claim that it promised a price match is not supported by the transcript."
+}

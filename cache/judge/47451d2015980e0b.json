@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot declined to make an exception (\"I understand, and I'm sorry for the disappointment, but I can't make an exception\") and only offered to connect the customer with a human agent if the bottle arrived damaged, which matches the published damaged-item rule."
+}

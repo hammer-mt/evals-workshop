@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot opens with a greeting, softens the refusal with \"Lamentablemente, los artículos que se han usado al aire libre... no se pueden devolver,\" and ends helpfully with \"avísame y puedo pasarte con una persona del equipo de soporte para que lo revise,\" which is professional and friendly."
+}

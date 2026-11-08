@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human; the customer reported no defect, did not ask for a person, and only asked for an exception, which the bot answered itself from the help pages: \"Custom-engraved items like your water bottle (order B200, engraved with \"Sam\") are final sale.\""
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot correctly applied the shipping policy and gave the tracking number, saying \"since your order A100 has already shipped, the delivery address can't be changed... Your tracking number is 1Z-BC-4471, so you can follow the package.\""
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot declined the out-of-scope request (\"I'm sorry, but I can only help with Basecamp Outfitters shopping and support, so I can't write a monitoring script\") and only offered a human agent without calling escalate_to_human, which is fine because no defect, security issue, unresolvable order problem, or request for a person came up."
+}

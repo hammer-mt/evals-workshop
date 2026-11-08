@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot correctly applied the help page's final-sale rule when it said \"personalized items are final sale and can't be returned or exchanged unless they arrive damaged,\" turned down the exception politely, and offered help in case the bottle arrived damaged."
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot's policy claims match the help pages, including \"we don't have a price-matching policy\" and \"the FALL20 code has ended\"; the $160.00 price came from the bot's product lookup rather than an invented policy."
+}

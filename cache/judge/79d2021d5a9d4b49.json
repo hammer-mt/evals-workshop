@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot makes no store commitments: it says \"the delivery address for order A100 can't be changed because it shipped on 2026-10-22\" and only suggests the customer \"contact the carrier with tracking number 1Z-BC-4471 to ask whether they can redirect the package,\" without promising that a redirect will happen."
+}

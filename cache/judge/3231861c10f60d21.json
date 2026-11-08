@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot made no escalate_to_human call and answered the return question itself, which the help pages fully cover, saying \"Refunds go back to your original payment method within 5–7 business days after the return arrives at our warehouse.\""
+}

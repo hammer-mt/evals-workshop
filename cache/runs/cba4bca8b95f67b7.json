@@ -1,0 +1,33 @@
+{
+ "transcript": [
+  {
+   "user": "Hola, compré unos calcetines y los usé en una caminata. ¿Puedo devolverlos?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "política de devoluciones artículos usados calcetines"
+     },
+     "result": [
+      "deals-page",
+      "shipping",
+      "promotions"
+     ]
+    },
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "returns policy"
+     },
+     "result": [
+      "returns",
+      "promotions"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "returns",
+   "reply": "Hola, soy un asistente de IA de Basecamp Outfitters. Lamentablemente, los artículos que se han usado al aire libre no se pueden devolver, así que los calcetines que usaste en la caminata no son elegibles para devolución. Si los calcetines resultaran defectuosos, consulta la política de garantía o puedo pasarte con un agente humano. ¿Quieres que lo haga?"
+  }
+ ]
+}

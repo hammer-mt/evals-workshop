@@ -1,0 +1,65 @@
+{
+ "transcript": [
+  {
+   "user": "I need waterproof hiking boots under $150, and they have to reach me in Colorado by Friday the 30th.",
+   "tools": [
+    {
+     "tool": "search_products",
+     "args": {
+      "query": "waterproof hiking boots",
+      "max_price": 150.0
+     },
+     "result": [
+      "HB-03",
+      "WB-01"
+     ]
+    },
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "shipping delivery times Colorado"
+     },
+     "result": [
+      "shipping",
+      "returns",
+      "warranty"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "products",
+   "reply": "The only waterproof hiking boot I found under $150 is the Cascade Waterproof Hiker ($145), but it's currently out of stock, so I can't promise it would reach you by Friday the 30th. For timing, orders ship from Denver within 1 business day, and expedited shipping takes 2 business days ($15). Standard takes 3–5 business days. I don't have restock information, so I can't say when the boots will be available again. If you'd like, I can connect you with a human agent to ask about it."
+  },
+  {
+   "user": "Hmm, ok, I can stretch the budget to $200. What would you recommend?",
+   "tools": [
+    {
+     "tool": "search_products",
+     "args": {
+      "query": "waterproof hiking boots",
+      "max_price": 200.0
+     },
+     "result": [
+      "HB-03",
+      "HB-05",
+      "RJ-01",
+      "WB-01"
+     ]
+    },
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "shipping delivery times to Colorado"
+     },
+     "result": [
+      "shipping",
+      "returns",
+      "warranty"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "reply": "With a $200 budget, I'd recommend the Tundra Waterproof Boot ($185). It's waterproof and in stock. Today is Saturday, Oct 24, and orders ship from Denver within 1 business day. Expedited shipping (2 business days, $15) should get it to you before Friday the 30th, though I can't guarantee an exact delivery date. Standard shipping takes 3–5 business days and is free on orders over $75, so it would likely arrive in time too, but expedited gives you more margin."
+  }
+ ]
+}

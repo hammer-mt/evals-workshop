@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human; it only offered a handoff (\"I can connect you with a human agent to confirm timing\") and answered the product and shipping questions itself, which is appropriate since the customer reported no defect and did not ask for a person."
+}

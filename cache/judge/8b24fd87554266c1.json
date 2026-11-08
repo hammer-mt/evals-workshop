@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human; it answered the worn-boot refund request from the help pages (\"I can't process a refund for worn boots... we can't make exceptions to that\") and only offered a handoff for a possible warranty claim, since the customer reported no defect and never asked for a person."
+}

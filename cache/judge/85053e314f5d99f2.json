@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot answered this simple unworn-return question itself with no escalate_to_human call, saying \"Yes, you can return it... within 30 days of delivery, so you have until November 17,\" and nothing in the case needed a person."
+}

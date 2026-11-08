@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "Each policy claim the bot made matches the returns and warranty pages, as in \"Because the boots have been worn and it's past the 30-day return window, they can't be returned for a refund. Warranty claims don't offer cash refunds either. If the claim is approved, you'd get a repair, a replacement, or store credit,\" and the \"within 1 business day\" timing comes from the escalation tool's own response rather than being invented."
+}

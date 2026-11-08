@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot's one policy claim, \"since your order A100 has already shipped, the delivery address can't be changed,\" matches the Shipping page rule that \"Once an order has shipped, the delivery address cannot be changed,\" and its order date and tracking number come from the order record."
+}

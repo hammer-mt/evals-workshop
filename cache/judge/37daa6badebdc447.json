@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human and handled the policy question itself, saying \"personalized items are final sale unless they arrive damaged,\" while only offering a human agent if the bottle \"did arrive damaged or faulty,\" which the customer never reported."
+}

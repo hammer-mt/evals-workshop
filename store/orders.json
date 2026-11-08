@@ -1,0 +1,13 @@
+{
+  "user-123": [
+    {"order_id": "A100", "items": "Ridgeline Trail Shoe", "total": "$129.00", "status": "shipped", "shipped": "2026-10-22", "tracking": "1Z-BC-4471"},
+    {"order_id": "A099", "items": "Merino Running Socks", "total": "$18.00", "status": "delivered", "delivered": "2026-10-02"}
+  ],
+  "user-456": [
+    {"order_id": "B201", "items": "Storm Shell Rain Jacket", "total": "$160.00", "status": "delivered", "delivered": "2026-10-18"},
+    {"order_id": "B200", "items": "Custom Engraved Water Bottle (engraving: 'Sam')", "total": "$34.00", "status": "delivered", "delivered": "2026-10-20"}
+  ],
+  "user-789": [
+    {"order_id": "C300", "items": "Summit GTX Hiking Boot", "total": "$210.00", "status": "delivered", "delivered": "2026-08-10"}
+  ]
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot's only policy claim, \"the delivery address for order A100 can't be changed because it shipped on 2026-10-22,\" matches the shipping page; its order dates and tracking number come from the order data, and its suggestion to ask the carrier makes no claim about store policy."
+}

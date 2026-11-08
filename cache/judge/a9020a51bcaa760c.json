@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot correctly said \"we don't have a price-matching policy, so I can't match the Backcountry price\" and that \"the FALL20 promotion you may have seen has also ended,\" which matches the promotion terms page, and it offered to connect the customer with the support team; the case note's claim that the bot promised a price match is not supported by the transcript."
+}

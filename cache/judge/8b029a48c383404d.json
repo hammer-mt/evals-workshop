@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot declined the address change, saying \"I'm sorry, but I can't change the delivery address on order A100,\" and offered only general help (\"let me know and I can help with next steps\") without promising refunds, credits, exceptions, delivery dates or discounts."
+}

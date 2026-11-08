@@ -1,0 +1,49 @@
+{
+ "transcript": [
+  {
+   "user": "I saw FALL20 on your deals page. Can I use it on the Summit GTX boots today?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "FALL20 promo code terms expiry exclusions"
+     },
+     "result": [
+      "promotions",
+      "deals-page"
+     ]
+    },
+    {
+     "tool": "search_products",
+     "args": {
+      "query": "Summit GTX boots",
+      "max_price": 10000.0
+     },
+     "result": [
+      "HB-02"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "products",
+   "reply": "Thanks for reaching out, and I'm sorry for the confusion. FALL20 is no longer valid. It ran October 1–15, 2026, so it can't be used today, October 24. The deals page still mentions it, and I'm sorry that's misleading.\n\nThe Summit GTX Hiking Boot (SKU HB-02) is in stock at $210.00, and it's waterproof. Here are a few ways to save on it:\n\n- **Basecamp Rewards:** You earn 1 point per $1 spent, and 100 points can be redeemed for $5 off. It's free to join, and you'd earn points on this purchase too.\n- **Current promotions:** I can't see any active discount codes right now, but I'm happy to help you check what's available before you buy.\n\nI can also check sizing or availability for the boots if you'd like. Is there anything else I can help you with?"
+  },
+  {
+   "user": "But it's literally still on your website right now.",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "FALL20 promo code promotion terms expiry eligible products"
+     },
+     "result": [
+      "promotions",
+      "deals-page"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "reply": "You're right to point that out, and I'm sorry for the confusion. The deals page still shows FALL20, but that's a marketing page and it's out of date. Our official promotion terms say FALL20 ran October 1–15, 2026 and has ended, so the code won't work at checkout today. I can't update the deals page from here.\n\nThe Summit GTX Hiking Boot (SKU HB-02) is $210.00 and in stock. Here are a couple of other ways to save:\n\n- **Basecamp Rewards:** It's free to join. You earn 1 point per $1 spent, and 100 points can be redeemed for $5 off. You'd earn points on these boots too.\n- **Current promotions:** I can't see any active codes right now, but I can help you check what's available before you order.\n\nI can also help with sizing or availability for the boots. Is there anything else I can help with?"
+  }
+ ]
+}

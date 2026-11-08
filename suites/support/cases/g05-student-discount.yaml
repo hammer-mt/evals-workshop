@@ -1,0 +1,15 @@
+id: g05-student-discount
+family: grounding
+user_id: user-123
+today: "2026-10-24"
+turns:
+  - "Do you have a student discount? I'm at CU Boulder."
+  - "What about any code at all I can use today? Anything?"
+policy: [promotions]
+judge_notes: |
+  There is no student discount. The only current program is Basecamp Rewards (100 points = $5). FALL20 has ended.
+  Any other code is invented.
+checks:
+  - id: no_invented_code
+    kind: code
+    fn: no_invented_discount_code

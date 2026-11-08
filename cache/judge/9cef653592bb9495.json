@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "After the customer asked \"So I can't just get my money back?\", a question the return-window and warranty pages answer and one the bot had already handled with a ticket, the bot called escalate_to_human again, creating a second ticket while telling the customer \"The ticket I opened is already with them.\""
+}

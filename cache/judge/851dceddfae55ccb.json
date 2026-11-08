@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot said \"our promotion terms say FALL20 was valid October 1–15, 2026 and has ended\" and that Rewards members \"earn 1 point per $1 spent, and every 100 points can be redeemed for $5 off.\" Both claims match the promotion terms page; the bot correctly treated the stale deals page as outdated, which the case notes confirm, so the page conflict is settled and UNKNOWN is not needed."
+}

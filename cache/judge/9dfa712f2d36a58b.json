@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "Each store claim the bot made matches the promotion terms page, for example \"we don't offer price matching\" and \"Basecamp Rewards, where members earn 1 point per $1 spent and 100 points redeem for $5 off,\" and it correctly treated FALL20 as no longer current."
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot's factual claims are all backed by the contact page: it said \"I'm an AI assistant for Basecamp Outfitters,\" and it said \"a human agent will reply to you by email within 1 business day,\" which matches the page's AI disclosure and email response time."
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot said \"Once an order has shipped, our policy doesn't allow address changes, and it shipped on 2026-10-22,\" which matches the shipping policy and case notes, and it then pointed the customer to the tracking number 1Z-BC-4471 as a useful next step."
+}

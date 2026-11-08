@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The transcript has no escalate_to_human call, and none was needed because the customer never asked for a person or reported a defect; the bot handled the product and shipping questions itself, saying \"With a $200 budget, I'd recommend the Tundra Waterproof Boot ($185).\""
+}

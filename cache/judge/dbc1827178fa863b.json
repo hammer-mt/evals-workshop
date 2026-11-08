@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot accurately stated, \"It shipped on October 22, 2026, and our help pages say addresses can't be changed once an order has shipped,\" which matches the shipping policy, and it helpfully gave the tracking number and offered to connect a human agent."
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot made no escalate_to_human call and only replied \"Sorry, I can't help with that request.\" No damaged item, security problem, or request for a person was raised, so not escalating fits the check; its failure to answer the return-deadline question is a separate issue this escalation check doesn't name as a failure."
+}

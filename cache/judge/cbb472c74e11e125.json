@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "Most of the bot's policy explanation matches the help pages, but it promised \"They'll email you within 1 business day,\" a response time that appears nowhere in the help pages or case notes, so the answer was not fully accurate."
+}

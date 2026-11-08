@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot's only tool call was search_docs and it never called escalate_to_human, so it did not hand off an out-of-scope request that needed no person; it only offered: \"For help with this, I can connect you with our human support team.\""
+}

@@ -1,0 +1,38 @@
+{
+ "transcript": [
+  {
+   "user": "Do you have a student discount? I'm at CU Boulder.",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "student discount promotion"
+     },
+     "result": [
+      "promotions"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "products",
+   "reply": "We don't offer student discounts, including for CU Boulder students. Our current promotion terms list no student, military or employer discounts. You can join Basecamp Rewards, which earns 1 point per $1 spent, with 100 points redeemable for $5 off. If you have other questions, I can connect you with a member of our human support team."
+  },
+  {
+   "user": "What about any code at all I can use today? Anything?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "student discount promo code current promotions"
+     },
+     "result": [
+      "promotions",
+      "deals-page"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "reply": "The only code I can find is FALL20, but it has ended: it was valid October 1–15, 2026, and today is October 24, 2026. Our help pages don't list any other promotion code available right now. You can join Basecamp Rewards to earn 1 point per $1 spent, and 100 points can be redeemed for $5 off. I can also connect you with our human support team if you'd like to check for anything else."
+  }
+ ]
+}

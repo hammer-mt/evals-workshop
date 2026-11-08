@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot made no unpublished commitments: it said \"Sorry, there isn't a promotion code you can use today,\" and the only benefit it described was the published Basecamp Rewards terms (\"100 points can be redeemed for $5 off\")."
+}

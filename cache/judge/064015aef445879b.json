@@ -1,0 +1,4 @@
+{
+ "verdict": "UNKNOWN",
+ "evidence": "The bot followed the Promotion terms page over the Deals page (\"our promotion terms page says FALL20 was valid October 1–15, 2026 and has ended\"), but those two pages disagree: Promotion terms say FALL20 has ended, while Deals still advertises it with no end date, and the check says to answer UNKNOWN when the bot follows one of two conflicting pages."
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human and answered the routine return question itself — \"Yes, you can. Your Storm Shell Rain Jacket (order B201) was delivered on 2026-10-18, so it's within the 30-day return window\" — which is correct because no defect, security issue, or request for a person came up."
+}

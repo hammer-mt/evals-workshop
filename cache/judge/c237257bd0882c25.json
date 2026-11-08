@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "In turn 1 the bot told the customer \"If you'd like to speak with a human team member, just let me know and I can connect you with one,\" but it is Saturday, outside live-chat hours, so no live person was available — the bot had to fall back to an email ticket without ever explaining that."
+}

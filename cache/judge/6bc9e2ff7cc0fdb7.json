@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot said, \"It's the custom-engraved bottle (order B200), and our policy lists personalized items as final sale. They can only be returned or exchanged if they arrive damaged,\" which identifies the item as engraved and refuses the return for that reason; its later odd \"please disregard that reference\" retracts only the order number, not the personalization reason, which it restated in turn 2."
+}

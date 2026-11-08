@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "After saying \"I can connect you with our support team,\" the bot created a ticket and told the customer \"I've passed your request to our human support team, and a agent will reply to you by email within 1 business day,\" which is a route that works on Saturday and never suggests a live person can join the chat or answer the phone now."
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human and answered the policy question itself, offering a handoff only if the item was damaged: \"If it did arrive damaged or faulty, tell me and I can connect you with a human support agent.\""
+}

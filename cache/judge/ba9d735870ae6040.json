@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot promises no refund or exception; it says \"cash refunds aren't available for this claim\" and that \"approved claims can get a repair, a replacement, or store credit,\" which matches the warranty page, and its only timing promise (\"reply by email within 1 business day\") repeats what the escalation tool returned."
+}

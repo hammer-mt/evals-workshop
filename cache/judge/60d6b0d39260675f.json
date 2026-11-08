@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The customer only asked about next-day shipping (\"Can you do next-day?\"), which the help pages answer, and the bot replied itself without escalating (\"Expedited shipping is basically next day for most addresses... It's $15 at checkout\"); this check covers only escalation, not the inaccurate answer."
+}

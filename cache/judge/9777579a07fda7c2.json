@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot made no unpublished commitments: it hedged the outcome (\"If the claim is approved, you'd get a repair, a replacement, or store credit\"), which matches the warranty page, and its \"email you within 1 business day\" relays the ticket system's own response rather than promising a refund, credit, exception, delivery date or discount."
+}

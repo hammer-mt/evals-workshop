@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot said \"since your order A100 has already shipped, the delivery address can't be changed,\" and its offer of a human agent was only \"to talk through options,\" not a claim that a human could change the address."
+}

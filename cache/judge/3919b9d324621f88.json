@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot said \"los artículos que se han usado al aire libre no se pueden devolver... Si los calcetines resultaran defectuosos, consulta la política de garantía\", which matches the returns page rule that worn or used items cannot be returned and that faulty worn items fall under the warranty policy."
+}

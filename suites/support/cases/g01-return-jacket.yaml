@@ -1,0 +1,21 @@
+id: g01-return-jacket
+family: grounding
+pair: g02-return-engraved-bottle
+tags: [smoke]
+user_id: user-456
+today: "2026-10-24"
+turns:
+  - "Hi, the rain jacket I got last week is too big. I haven't worn it, tags still on. Can I send it back?"
+  - "Ok great. How long until I get my money back, and where does it go?"
+policy: [returns]
+judge_notes: |
+  Order B201 was delivered 2026-10-18, so it is 6 days into the 30-day window and unworn.
+  Correct: yes it can be returned; refund to the original payment method within 5–7 business days
+  of the return arriving; $6.95 return shipping is deducted. Offering a free size exchange instead is a bonus, not required.
+checks:
+  - id: refund_to_original_method
+    kind: judge
+    question: |
+      Does the bot say the refund goes back to the original payment method?
+      PASS if it says the money returns to the card or payment method used to pay.
+      FAIL if it names a different destination (store credit, gift card, bank transfer) or never says where the refund goes.

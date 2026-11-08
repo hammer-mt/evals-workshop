@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "Every store fact the bot gave matches the authoritative promotion-terms page and the catalog: \"It's priced at $160.00 and is currently in stock… Basecamp Rewards, where 100 points can be redeemed for $5 off. We don't offer price matching, and the FALL20 code has ended.\" The marketing-maintained Deals page still promotes FALL20, but the promotion-terms page dates it to October 1–15 and says it has ended, so this does not leave the check unsettled."
+}

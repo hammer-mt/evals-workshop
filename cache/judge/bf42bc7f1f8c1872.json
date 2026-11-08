@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot answered the expired-code question from the promotion terms without escalating, saying \"our official promotion terms say FALL20 ended on October 15, 2026. I can't apply it or make an exception,\" and no item defect, security issue, unresolvable order problem or request for a person ever came up."
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human: the customer reported no defect and never asked for a person, and the bot answered the worn-item refund request from the help pages itself, saying \"Our policy doesn't allow returns of worn or used items, and I can't honor an exception I can't verify, even if one was promised.\""
+}

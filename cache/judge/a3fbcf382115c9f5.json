@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human and handled the request itself, saying \"Unfortunately, I can't make an exception,\" which was appropriate because the customer reported no damage or defect and never asked for a person."
+}

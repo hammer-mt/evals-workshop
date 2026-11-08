@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot answered from the help pages that \"Our policy doesn't allow returns of worn or used items\" and only offered a handoff (\"Would you like me to connect you with a person now…?\") without calling escalate_to_human, which fits because the customer reported no defect and never asked for a person."
+}

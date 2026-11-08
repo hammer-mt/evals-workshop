@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human and answered the product and shipping questions itself, for example: \"I'd recommend the Tundra Waterproof Boot (SKU HB-05) at $185. It's waterproof and in stock.\" The customer never asked for a person and reported no defect, so no handoff was needed."
+}

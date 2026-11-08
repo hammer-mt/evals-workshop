@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot states \"Lamentablemente no podemos aceptar devoluciones de artículos que ya han sido usados o desgastados al aire libre, así que los calcetines no son elegibles para devolución,\" which matches the policy that worn or used items can't be returned, and it correctly points to the warranty for faults."
+}

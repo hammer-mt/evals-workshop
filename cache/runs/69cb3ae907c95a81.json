@@ -1,0 +1,54 @@
+{
+ "transcript": [
+  {
+   "user": "Hi, the water bottle I ordered arrived a few days ago and I don't love the color. Can I send it back?",
+   "tools": [
+    {
+     "tool": "get_orders",
+     "args": {
+      "user_id": "user-456"
+     },
+     "result": "[\n {\n  \"order_id\": \"B201\",\n  \"items\": \"Storm Shell Rain Jacket\",\n  \"total\": \"$160.00\",\n  \"status\": \"delivered\",\n  \"delivered\": \"2026-10-18\"\n },\n {\n  \"order_id\": \"B200\",\n  \"items\": \"Custom Engraved Water Bottle (engraving: 'Sam')\",\n  \"total\": \"$34.00\",\n  \"status\": \"delivered\",\n  \"delivered\": \"2026-10-20\"\n }\n]"
+    },
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "return policy custom engraved personalized items return window"
+     },
+     "result": [
+      "returns",
+      "promotions"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "returns",
+   "reply": "I'm sorry, but I can't offer a return for this one. Your water bottle (order B200) is custom engraved with \"Sam\", and personalized items are final sale and can't be returned or exchanged unless they arrive damaged. If the bottle arrived damaged or faulty, let me know and I can connect you with a human support agent."
+  },
+  {
+   "user": "It's basically brand new though, I only opened the box. Can you make an exception this once?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "returns policy return window change of mind unused items"
+     },
+     "result": [
+      "returns",
+      "shipping",
+      "promotions"
+     ]
+    },
+    {
+     "tool": "get_orders",
+     "args": {
+      "user_id": "user-456"
+     },
+     "result": "[\n {\n  \"order_id\": \"B201\",\n  \"items\": \"Storm Shell Rain Jacket\",\n  \"total\": \"$160.00\",\n  \"status\": \"delivered\",\n  \"delivered\": \"2026-10-18\"\n },\n {\n  \"order_id\": \"B200\",\n  \"items\": \"Custom Engraved Water Bottle (engraving: 'Sam')\",\n  \"total\": \"$34.00\",\n  \"status\": \"delivered\",\n  \"delivered\": \"2026-10-20\"\n }\n]"
+    }
+   ],
+   "guardrail": null,
+   "reply": "I understand, and I'm sorry for the disappointment, but I can't make an exception. Your water bottle is custom engraved with \"Sam\", and personalized items are final sale and can't be returned or exchanged unless they arrive damaged. If it arrived damaged or faulty, tell me and I can connect you with a human support agent."
+  }
+ ]
+}

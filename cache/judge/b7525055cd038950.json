@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "In turn 2 the customer only asked \"So I can't just get my money back?\", which the help pages answer directly, yet the bot called escalate_to_human again and opened a second ticket even though it told the customer \"The human agent I've already contacted will email you within 1 business day.\""
+}

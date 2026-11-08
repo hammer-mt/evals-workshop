@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot answered the address-change request itself without escalating, which was appropriate because the help pages say a shipped order's address cannot be changed by anyone: \"It shipped on October 22, and once an order has shipped, our policy doesn't allow address changes.\""
+}

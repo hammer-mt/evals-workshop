@@ -1,0 +1,37 @@
+{
+ "transcript": [
+  {
+   "user": "Do you have a student discount? I'm at CU Boulder.",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "student discount promotions"
+     },
+     "result": [
+      "promotions"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "products",
+   "reply": "Thanks for asking! Basecamp Outfitters doesn't offer student, military, or employer discounts. One thing you can use is Basecamp Rewards: members earn 1 point per $1 spent, and 100 points can be redeemed for $5 off. Let me know if you'd like help with anything else."
+  },
+  {
+   "user": "What about any code at all I can use today? Anything?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "promotions discount codes student discount"
+     },
+     "result": [
+      "promotions"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "reply": "Unfortunately, I don't see any active promo codes right now. The FALL20 code (20% off full-price footwear) ended on October 15, 2026, so it can't be used today. The only current option is Basecamp Rewards, where you earn 1 point per $1 spent and can redeem 100 points for $5 off."
+  }
+ ]
+}

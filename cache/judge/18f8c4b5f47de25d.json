@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "The bot committed to \"I've passed your case to a human agent, who will email you within 1 business day,\" a response-time promise that the help pages never publish and the escalation tool (which returned only \"ticket created\") did not supply."
+}

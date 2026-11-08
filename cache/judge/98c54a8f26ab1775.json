@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot made no escalate_to_human call; it answered the address question itself with \"I can't change the delivery address on order A100. Our policy doesn't allow address changes once an order has shipped,\" which the help pages settle, and the customer reported no defect and did not ask for a person."
+}

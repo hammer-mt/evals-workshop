@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human and answered the address request from policy (\"our policy doesn't allow address changes once an order has shipped\"), which was correct because the help pages settle this question and the customer never asked for a person or reported a defect."
+}

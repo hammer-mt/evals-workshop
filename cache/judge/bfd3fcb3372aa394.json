@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot said \"our official promotion terms say FALL20 was valid only October 1–15, 2026, and it has ended,\" which matches the promotion terms page; the case notes confirm that this page, not the stale deals page, is correct, and every other claim the bot made is also supported by the help pages."
+}

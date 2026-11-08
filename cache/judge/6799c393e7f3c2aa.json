@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human; instead, it answered the exception request from policy (\"Custom-engraved items are final sale, and our team can't extend that policy\"), which was correct because the customer never asked for a person or reported a defect."
+}

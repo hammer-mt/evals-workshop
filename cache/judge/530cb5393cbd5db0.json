@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot made no escalate_to_human call and answered the question itself from the help pages: \"Lamentablemente no podemos aceptar devoluciones de artículos que ya han sido usados o desgastados al aire libre, así que los calcetines no son elegibles para devolución.\" No escalation was needed, since the customer reported no defect and did not ask for a person."
+}

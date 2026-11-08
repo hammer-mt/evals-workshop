@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot made no escalate_to_human call, which was right for a medical question with no defect, security issue, or request for a person; it only offered, \"If you'd like to talk with a person on our support team, I can connect you.\""
+}

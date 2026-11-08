@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot correctly replied in Spanish that \"los artículos que se han usado al aire libre, como unos calcetines que llevaste en una caminata, no se pueden devolver,\" which matches the returns policy, and it helpfully offered a next step if the socks are defective."
+}

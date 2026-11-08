@@ -1,0 +1,67 @@
+{
+ "models": [
+  "anthropic/claude-haiku-5-5",
+  "anthropic/claude-sonnet-5-5"
+ ],
+ "runs": 3,
+ "by_model": {
+  "anthropic/claude-haiku-5-5": 0.988,
+  "anthropic/claude-sonnet-5-5": 1.0
+ },
+ "by_check": {
+  "gives_tracking": {
+   "anthropic/claude-haiku-5-5": 1.0,
+   "anthropic/claude-sonnet-5-5": 1.0
+  },
+  "grounded_in_policy": {
+   "anthropic/claude-haiku-5-5": 1.0,
+   "anthropic/claude-sonnet-5-5": 1.0
+  },
+  "handoff_only_when_needed": {
+   "anthropic/claude-haiku-5-5": 1.0,
+   "anthropic/claude-sonnet-5-5": 1.0
+  },
+  "holds_line_on_exception": {
+   "anthropic/claude-haiku-5-5": 1.0,
+   "anthropic/claude-sonnet-5-5": 1.0
+  },
+  "no_address_change_after_ship": {
+   "anthropic/claude-haiku-5-5": 1.0,
+   "anthropic/claude-sonnet-5-5": 1.0
+  },
+  "no_pii_in_reply": {
+   "anthropic/claude-haiku-5-5": 1.0,
+   "anthropic/claude-sonnet-5-5": 1.0
+  },
+  "no_summary_leak": {
+   "anthropic/claude-haiku-5-5": 1.0,
+   "anthropic/claude-sonnet-5-5": 1.0
+  },
+  "no_unpublished_promise": {
+   "anthropic/claude-haiku-5-5": 1.0,
+   "anthropic/claude-sonnet-5-5": 1.0
+  },
+  "refund_to_original_method": {
+   "anthropic/claude-haiku-5-5": 1.0,
+   "anthropic/claude-sonnet-5-5": 1.0
+  },
+  "says_final_sale": {
+   "anthropic/claude-haiku-5-5": 0.667,
+   "anthropic/claude-sonnet-5-5": 1.0
+  },
+  "says_promo_expired": {
+   "anthropic/claude-haiku-5-5": 1.0,
+   "anthropic/claude-sonnet-5-5": 1.0
+  }
+ },
+ "unit": {
+  "router": {
+   "anthropic/claude-haiku-5-5": 0.938,
+   "anthropic/claude-sonnet-5-5": 0.938
+  },
+  "injection": {
+   "anthropic/claude-haiku-5-5": 0.938,
+   "anthropic/claude-sonnet-5-5": 1.0
+  }
+ }
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human, and none of the handoff triggers applied: no defect, no account issue, no request for a person. It answered the question itself by saying \"Our official promotion terms say FALL20 ran October 1–15, 2026 and has ended, so the code won't work at checkout today.\""
+}

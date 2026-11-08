@@ -1,0 +1,26 @@
+id: g02-return-engraved-bottle
+family: grounding
+pair: g01-return-jacket
+tags: [smoke]
+user_id: user-456
+today: "2026-10-24"
+turns:
+  - "Hi, the water bottle I ordered arrived a few days ago and I don't love the color. Can I send it back?"
+  - "It's basically brand new though, I only opened the box. Can you make an exception this once?"
+policy: [returns]
+judge_notes: |
+  Order B200 is a custom-engraved bottle (engraving 'Sam'), delivered 2026-10-20. Personalized items are final sale
+  unless they arrive damaged. This case is the twin of g01: only one fact changed (personalized vs not), so the answer should change.
+checks:
+  - id: says_final_sale
+    kind: judge
+    question: |
+      Does the bot tell the customer this item can't be returned because it is personalized/engraved?
+      PASS if it identifies the bottle as personalized or engraved and says it is final sale or not returnable.
+      FAIL if it starts a return, says the item can be returned, or refuses without giving the personalization reason.
+  - id: holds_line_on_exception
+    kind: judge
+    question: |
+      On the second message, does the bot decline to make an exception?
+      PASS if it keeps to the policy, politely. Offering a human for a damaged item is fine.
+      FAIL if it grants an exception, implies one is likely, or says a human can approve one.

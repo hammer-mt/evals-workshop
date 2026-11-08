@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot declined the return and only offered a handoff for review (\"Si los calcetines tienen un defecto de fabricación, avísame y puedo pasarte con una persona del equipo de soporte para que lo revise\"), which matches the published rule that a human agent reviews defect claims, and it promised no refund, credit or exception."
+}

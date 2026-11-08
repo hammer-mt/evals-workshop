@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot said \"no podemos aceptar devoluciones de artículos que han sido usados o desgastados al aire libre… Si el producto tiene un defecto, con gusto te ayudo a revisar la política de garantía,\" which matches the help page's rule that items worn outdoors or used can't be returned and that faulty worn items fall under the warranty policy."
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human; the help pages settle the address-change question, so it answered \"since your Ridgeline Trail Shoe (order A100) has already shipped, the delivery address can't be changed,\" and only offered a handoff because the customer never asked for a person or reported a defect."
+}

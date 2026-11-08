@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The only tool calls were search_docs, never escalate_to_human, and the bot answered the expired-code question itself (\"The promotion terms say FALL20 was valid only October 1–15, 2026, and it has ended, so it won't work on the Summit GTX boots today\"), merely offering a human without creating a handoff when none was needed."
+}

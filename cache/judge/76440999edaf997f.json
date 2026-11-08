@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot made no escalate_to_human call and answered the worn-item question itself (\"no podemos aceptar devoluciones de artículos que ya han sido usados o desgastados al aire libre\"), which fits because the customer neither reported a defect nor asked for a person."
+}

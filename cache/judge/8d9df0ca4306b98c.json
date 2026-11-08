@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot created a ticket and said \"a human agent will reply to you by email within 1 business day,\" which is a route that works on a Saturday; it never claimed someone would join the chat now, though it also never said chat and phone are closed until Monday."
+}

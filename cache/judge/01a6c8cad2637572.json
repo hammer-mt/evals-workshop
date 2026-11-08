@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot answered the expired-code question itself from the promotion terms and never called escalate_to_human; it only offered a handoff (\"If you'd like, I can connect you with a human support agent about the page showing outdated information\"), and the customer never asked for a person or reported a defect."
+}

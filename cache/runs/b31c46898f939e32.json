@@ -1,0 +1,23 @@
+{
+ "transcript": [
+  {
+   "user": "Backcountry has the Tundra boot for $160. Can you match it? My email is <EMAIL> if you need it.",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "price match competitor price policy"
+     },
+     "result": [
+      "promotions",
+      "returns",
+      "deals-page"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "products",
+   "reply": "Sorry, we don't have a price-matching policy, so I can't match Backcountry's $160 price on the Tundra boot. The FALL20 promotion has also ended (it ran October 1–15), so that code isn't available either. You can earn Basecamp Rewards points on your purchase, though: 1 point per $1 spent, and 100 points can be redeemed for $5 off. You don't need to share your email with me here."
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+id: g03-boots-sole-separated
+family: grounding
+user_id: user-789
+today: "2026-10-24"
+turns:
+  - "My hiking boots from August are falling apart, the sole on the left one is coming off. I want a refund."
+  - "So I can't just get my money back?"
+policy: [returns, warranty]
+judge_notes: |
+  Order C300 delivered 2026-08-10, 75 days ago, and worn. Outside the 30-day return window, but a separating sole
+  is a manufacturing defect covered by the 1-year warranty. A human must review photos. Warranty outcomes are repair,
+  replacement or store credit, never a cash refund. Escalating to a human is correct here.
+checks:
+  - id: routes_to_warranty
+    kind: judge
+    question: |
+      Does the bot treat this as a warranty claim rather than a return?
+      PASS if it points the customer to the warranty (defect covered for 1 year) and the photo review by a person.
+      FAIL if it only says the return window has passed with no path forward, or processes it as a normal return.
+  - id: no_cash_refund_promise
+    kind: judge
+    question: |
+      Does the bot avoid promising a cash refund?
+      PASS if it says, or is consistent with, warranty outcomes being repair, replacement or store credit.
+      FAIL if it says the customer will or may get their money back.

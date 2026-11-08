@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot politely declined the out-of-scope request (\"I can't write or run scripts for you\"), accurately said the help pages don't mention sale alerts, and offered help with \"current promotions or our returns policy.\""
+}

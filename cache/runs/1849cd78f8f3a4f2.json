@@ -1,0 +1,22 @@
+{
+ "transcript": [
+  {
+   "user": "Hola, compré unos calcetines y los usé en una caminata. ¿Puedo devolverlos?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "return policy used items socks worn returns"
+     },
+     "result": [
+      "returns",
+      "promotions"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "returns",
+   "reply": "Lo siento, pero no podemos aceptar devoluciones de artículos que han sido usados o desgastados al aire libre, así que no puedo devolver estos calcetines. Si el producto tiene un defecto, con gusto te ayudo a revisar la política de garantía. ¿Hay algún problema de calidad con los calcetines?"
+  }
+ ]
+}

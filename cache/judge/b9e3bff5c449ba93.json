@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "In turn 2 the bot routed the customer to a working option, saying \"I've passed your request to our human support team, and a agent will reply to you by email within 1 business day,\" which is a ticket/email route that works on Saturday rather than a live chat or phone handoff."
+}

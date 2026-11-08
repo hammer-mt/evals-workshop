@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "The bot offered a ticket (\"a human agent will reply by email within 1 business day\") but never said live chat and phone are closed until Monday, and in turn 1 it implied an immediate handoff (\"just let me know and I can connect you\")."
+}

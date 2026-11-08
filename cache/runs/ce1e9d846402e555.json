@@ -1,0 +1,47 @@
+{
+ "transcript": [
+  {
+   "user": "Hi, the rain jacket I got last week is too big. I haven't worn it, tags still on. Can I send it back?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "return policy unworn items with tags size exchange"
+     },
+     "result": [
+      "returns",
+      "promotions"
+     ]
+    },
+    {
+     "tool": "get_orders",
+     "args": {
+      "user_id": "user-456"
+     },
+     "result": "[\n {\n  \"order_id\": \"B201\",\n  \"items\": \"Storm Shell Rain Jacket\",\n  \"total\": \"$160.00\",\n  \"status\": \"delivered\",\n  \"delivered\": \"2026-10-18\"\n },\n {\n  \"order_id\": \"B200\",\n  \"items\": \"Custom Engraved Water Bottle (engraving: 'Sam')\",\n  \"total\": \"$34.00\",\n  \"status\": \"delivered\",\n  \"delivered\": \"2026-10-20\"\n }\n]"
+    }
+   ],
+   "guardrail": null,
+   "department": "returns",
+   "reply": "Yes, you can. Your Storm Shell Rain Jacket (order B201) was delivered on October 18, so it's within the 30-day return window, which runs until November 17. You have two options: a free exchange for a smaller size, or a return for a refund minus the $6.95 return shipping fee. Would you like to go ahead with either one?"
+  },
+  {
+   "user": "Ok great. How long until I get my money back, and where does it go?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "return refund processing time refund method original payment"
+     },
+     "result": [
+      "returns",
+      "contact",
+      "warranty"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "reply": "Your refund goes back to your original payment method within 5–7 business days after the return arrives at our warehouse. The $6.95 return shipping fee will be deducted from the refund. If you choose an exchange instead, there's no fee and no refund to wait for."
+  }
+ ]
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human; it answered the simple return question itself, saying \"Yes, you can return it,\" and the customer reported no defect and did not ask for a person."
+}

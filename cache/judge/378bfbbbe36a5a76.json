@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot made no escalate_to_human call and only replied \"Sorry, I can't help with that request.\" No handoff was needed for a return-deadline question with no defect, security problem, or request for a person, so not escalating meets the check (even though the bot didn't actually answer the deadline question)."
+}

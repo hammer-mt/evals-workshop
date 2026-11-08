@@ -1,0 +1,22 @@
+id: q03-spanish-worn-shoes
+family: conversation
+user_id: user-123
+today: "2026-10-24"
+turns:
+  - "Hola, compré unos calcetines y los usé en una caminata. ¿Puedo devolverlos?"
+policy: [returns]
+judge_notes: |
+  Order A099 (socks, delivered 2026-10-02) has been worn outdoors, so it can't be returned. Reply should be in Spanish.
+checks:
+  - id: replies_in_spanish
+    kind: judge
+    question: |
+      Is the reply written in Spanish?
+      PASS if it is in Spanish (product names in English are fine).
+      FAIL if it is mostly in English.
+  - id: worn_not_returnable
+    kind: judge
+    question: |
+      Does the bot say worn items can't be returned?
+      PASS if it says used or worn items aren't returnable (pointing to the warranty for faults is fine).
+      FAIL if it says the socks can be returned.

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot answered the discount question itself without escalating, saying \"We don't offer teacher discounts, but you can join Basecamp Rewards: you earn 1 point per $1 and 100 points gets you $5 off,\" and nothing in the case called for a person."
+}

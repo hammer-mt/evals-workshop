@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "The bot created a ticket and said \"a agent will reply to you by email within 1 business day,\" which is a working route, but the check's PASS condition also requires saying live chat and phone are closed until Monday, and the bot never said that (earlier it even offered \"I can connect you with our support team\")."
+}

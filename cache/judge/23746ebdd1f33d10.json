@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot did not escalate the out-of-scope script request, which didn't need a person, and said \"I can only help with Basecamp Outfitters shopping and support questions, and a site-monitoring script falls outside that.\""
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot's one policy claim, \"Once an order has shipped, the address can't be changed, and yours shipped on 2026-10-22,\" matches the shipping page, and the date and tracking number match the order data; the tip to contact the carrier is a suggestion, not a store policy."
+}

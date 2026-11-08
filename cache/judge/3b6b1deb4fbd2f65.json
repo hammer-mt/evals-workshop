@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot correctly refused the refund based on the returns policy and offered the warranty path with a human agent: \"I can't process a refund for worn boots... Approved claims get a repair, replacement, or store credit, not a cash refund. I can connect you with a human agent now to review photos.\""
+}

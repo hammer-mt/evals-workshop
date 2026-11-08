@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "In the second message the bot explicitly says \"I understand it's barely used, but I can't make an exception. Our return policy doesn't allow exceptions,\" and it does not grant an exception or say a human can approve one; its incorrect walk-back about the order lookup is a separate error outside this check."
+}

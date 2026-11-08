@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot's concrete commitment, \"A team member will reply by email within 1 business day,\" matches the published email policy; its earlier \"I can connect you with one\" was a misstatement about Saturday availability, not a promise of refunds, credits, exceptions, delivery dates or discounts, and that accuracy issue belongs to the separate grounded_in_policy check."
+}

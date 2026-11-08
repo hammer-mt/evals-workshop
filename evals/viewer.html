@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eval viewer</title>
+<style>
+  :root { --bg:#fafaf9; --panel:#fff; --ink:#1c1917; --muted:#78716c; --line:#e7e5e4;
+          --pass:#15803d; --pass-bg:#dcfce7; --fail:#b91c1c; --fail-bg:#fee2e2; --unk:#a16207; --unk-bg:#fef3c7;
+          --cust:#f5f5f4; --bot:#eff6ff; --accent:#e91e63; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#1c1917; --panel:#292524; --ink:#f5f5f4; --muted:#a8a29e; --line:#44403c;
+            --pass:#86efac; --pass-bg:#14532d; --fail:#fca5a5; --fail-bg:#7f1d1d; --unk:#fde68a; --unk-bg:#713f12;
+            --cust:#3a3532; --bot:#1e3a5f; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:14px/1.5 ui-sans-serif, system-ui, sans-serif; }
+  header { padding:12px 20px; border-bottom:1px solid var(--line); display:flex; gap:16px; align-items:center; flex-wrap:wrap; background:var(--panel); position:sticky; top:0; z-index:2; }
+  header h1 { font-size:16px; margin:0; }
+  header .meta { color:var(--muted); font-size:12px; }
+  header .spacer { flex:1; }
+  button { font:inherit; border:1px solid var(--line); background:var(--panel); color:var(--ink); border-radius:6px; padding:4px 10px; cursor:pointer; }
+  button.on { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .layout { display:grid; grid-template-columns:260px 1fr; min-height:calc(100vh - 56px); }
+  nav { border-right:1px solid var(--line); padding:12px; overflow:auto; max-height:calc(100vh - 56px); position:sticky; top:56px; }
+  nav h3 { font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); margin:14px 0 4px; }
+  nav a { display:flex; justify-content:space-between; gap:6px; padding:4px 6px; border-radius:5px; color:inherit; text-decoration:none; font-size:13px; }
+  nav a.sel { background:var(--line); }
+  nav .tally { font-variant-numeric:tabular-nums; color:var(--muted); font-size:12px; white-space:nowrap; }
+  main { padding:16px 20px; overflow:auto; }
+  table.sum { border-collapse:collapse; margin-bottom:20px; font-size:13px; }
+  table.sum th, table.sum td { border-bottom:1px solid var(--line); padding:4px 10px; text-align:left; font-variant-numeric:tabular-nums; }
+  .cols { display:grid; gap:16px; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr)); }
+  .col { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:12px; }
+  .col h2 { font-size:14px; margin:0 0 8px; display:flex; justify-content:space-between; align-items:center; gap:8px; }
+  .msg { border-radius:8px; padding:8px 10px; margin:6px 0; white-space:pre-wrap; }
+  .cust { background:var(--cust); }
+  .bot { background:var(--bot); }
+  .who { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+  details.tools { font-size:12px; color:var(--muted); margin:2px 0 2px 10px; }
+  details.tools pre { white-space:pre-wrap; margin:4px 0; }
+  .v { border-top:1px solid var(--line); padding:6px 0; font-size:13px; }
+  .chip { display:inline-block; font-size:11px; font-weight:600; border-radius:4px; padding:1px 6px; margin-right:6px; }
+  .PASS { color:var(--pass); background:var(--pass-bg); } .FAIL { color:var(--fail); background:var(--fail-bg); }
+  .UNKNOWN, .NOT_RUN { color:var(--unk); background:var(--unk-bg); }
+  .q { color:var(--muted); font-size:12px; white-space:pre-wrap; }
+  .ev { margin-top:2px; }
+  .notes { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:10px 12px; margin-bottom:14px; font-size:13px; }
+  .notes pre { white-space:pre-wrap; margin:6px 0 0; font:inherit; }
+  .lab button { padding:1px 8px; font-size:12px; margin-right:4px; }
+  .lab input { width:100%; margin-top:4px; font:inherit; font-size:12px; padding:3px 6px; border:1px solid var(--line); border-radius:5px; background:var(--bg); color:var(--ink); }
+  @media (max-width:760px) { .layout { grid-template-columns:1fr; } nav { position:static; max-height:none; border-right:0; border-bottom:1px solid var(--line); } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Eval viewer</h1>
+  <span class="meta" id="meta"></span>
+  <span class="spacer"></span>
+  <span class="meta" id="progress"></span>
+  <button id="labelMode" title="Hide the judge's verdicts and label judge checks yourself">Label mode (blind)</button>
+  <button id="download">Download labels.jsonl</button>
+</header>
+<div class="layout">
+  <nav id="nav"></nav>
+  <main id="main"></main>
+</div>
+<script>
+const D = __DATA__;
+const R = D.results, rows = R.rows, models = R.models;
+const short = m => m.split("/").pop();
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const storeKey = "labels:" + D.name;
+let labels = {};
+try { labels = JSON.parse(localStorage.getItem(storeKey) || "{}"); } catch (e) {}
+const saveLabels = () => { try { localStorage.setItem(storeKey, JSON.stringify(labels)); } catch (e) {} progress(); };
+let blind = false, current = null, runSel = {};
+
+document.getElementById("meta").textContent =
+  `${D.name} · ${models.map(short).join(" vs ")} · ${R.runs} run(s) · judge ${short(R.judge)}`;
+
+function tally(caseId, model) {
+  const vs = rows.filter(r => r.case === caseId && r.model === model).flatMap(r => r.verdicts);
+  const p = vs.filter(v => v.verdict === "PASS").length, f = vs.filter(v => v.verdict === "FAIL").length;
+  return `${p}/${p + f}`;
+}
+
+function nav() {
+  const byFam = {};
+  Object.values(D.cases).filter(c => rows.some(r => r.case === c.id)).forEach(c => (byFam[c.family] ??= []).push(c));
+  let h = `<a href="#" data-case="" class="${current ? "" : "sel"}"><b>Summary</b></a>`;
+  for (const [fam, cs] of Object.entries(byFam)) {
+    h += `<h3>${esc(fam)}</h3>`;
+    for (const c of cs) h += `<a href="#" data-case="${c.id}" class="${current === c.id ? "sel" : ""}"><span>${esc(c.id)}</span><span class="tally">${models.map(m => tally(c.id, m)).join(" · ")}</span></a>`;
+  }
+  const el = document.getElementById("nav");
+  el.innerHTML = h;
+  el.querySelectorAll("a").forEach(a => a.onclick = e => { e.preventDefault(); current = a.dataset.case || null; render(); });
+}
+
+function summary() {
+  const s = D.summary;
+  let h = `<h2>Checks by model</h2><p class="q">PASS / (PASS + FAIL). A check every model passes, or every model fails, tells you nothing about how they differ.</p><table class="sum"><tr><th>check</th>${models.map(m => `<th>${esc(short(m))}</th>`).join("")}</tr>`;
+  for (const [c, per] of Object.entries(s.by_check)) {
+    h += `<tr><td title="${esc(D.questions[c] || "")}">${esc(c)}</td>${models.map(m => { const x = per[m]; return x.pass + x.fail === 0 && x.not_run ? `<td><span class="chip NOT_RUN">not graded</span></td>` : `<td>${x.pass}/${x.pass + x.fail}${x.unknown ? ` <span class="chip UNKNOWN">?${x.unknown}</span>` : ""}</td>`; }).join("")}</tr>`;
+  }
+  h += `<tr><th>overall</th>${models.map(m => { const x = s.by_model[m]; return `<th>${x.rate == null ? "-" : Math.round(x.rate * 100) + "%"}</th>`; }).join("")}</tr></table>`;
+  for (const [comp, per] of Object.entries(s.unit || {})) {
+    h += `<p><b>unit/${esc(comp)}</b>: ${Object.entries(per).map(([m, x]) => `${esc(short(m))} ${Math.round(x.rate * 100)}% (${x.pass}/${x.pass + x.fail})`).join(" · ")}</p>`;
+  }
+  return h;
+}
+
+function labelControls(row, v) {
+  const k = row.key + ":" + v.check, cur = labels[k] || {};
+  return `<div class="lab" data-k="${esc(k)}" data-run="${row.key}" data-check="${esc(v.check)}" data-case="${row.case}" data-model="${esc(row.model)}">
+    ${["PASS", "FAIL", "UNKNOWN"].map(l => `<button class="${cur.label === l ? "on" : ""}" data-l="${l}">${l}</button>`).join("")}
+    <input placeholder="why? (optional, but this is where checks come from)" value="${esc(cur.note || "")}"></div>`;
+}
+
+function column(caseId, model) {
+  const runs = rows.filter(r => r.case === caseId && r.model === model);
+  if (!runs.length) return "";
+  const i = Math.min(runSel[caseId + model] ?? 0, runs.length - 1), row = runs[i];
+  let h = `<div class="col"><h2><span>${esc(short(model))}</span>${runs.length > 1 ? `<span>${runs.map((r, j) => `<button class="${j === i ? "on" : ""}" data-run="${j}" data-model="${esc(model)}">run ${j + 1}</button>`).join(" ")}</span>` : ""}</h2>`;
+  if (row.status !== "valid") h += `<div class="msg"><span class="chip NOT_RUN">INVALID RUN</span>${esc(row.error || "")}</div>`;
+  row.transcript.forEach((t, n) => {
+    h += `<div class="msg cust"><div class="who">customer · turn ${n + 1}${t.department ? ` · routed: ${esc(t.department)}` : ""}</div>${esc(t.user)}</div>`;
+    if (t.guardrail) h += `<details class="tools" open><summary>guardrail: ${esc(t.guardrail)} blocked this message</summary></details>`;
+    if (t.tools.length) h += `<details class="tools"><summary>${t.tools.length} tool call(s): ${t.tools.map(c => esc(c.tool)).join(", ")}</summary><pre>${esc(t.tools.map(c => `${c.tool}(${JSON.stringify(c.args)})\n→ ${typeof c.result === "string" ? c.result : JSON.stringify(c.result)}`).join("\n\n"))}</pre></details>`;
+    h += `<div class="msg bot"><div class="who">bot</div>${esc(t.reply)}</div>`;
+  });
+  for (const v of row.verdicts) {
+    const showVerdict = !(blind && v.kind === "judge");
+    h += `<div class="v">${showVerdict ? `<span class="chip ${v.verdict}">${v.verdict}</span>` : ""}<b>${esc(v.check)}</b> <span class="q">(${v.kind}, ${v.scope})</span>
+      <details><summary class="q">check</summary><div class="q">${esc(D.questions[v.check] || "")}</div></details>
+      ${showVerdict ? `<div class="ev">${esc(v.evidence)}</div>` : ""}
+      ${blind && v.kind === "judge" && row.status === "valid" ? labelControls(row, v) : ""}</div>`;
+  }
+  return h + "</div>";
+}
+
+function caseView(id) {
+  const c = D.cases[id];
+  let h = `<h2 style="margin-top:0">${esc(id)} <span class="q">${esc(c.family)} · ${esc(c.user_id)} · today ${esc(c.today)}</span></h2>`;
+  if (c.pair) h += `<p class="q">Paired case (one fact changed): <a href="#" data-goto="${esc(c.pair)}">${esc(c.pair)}</a></p>`;
+  h += `<div class="notes"><b>What the judge knows</b> <span class="q">· help pages: ${esc((c.policy || []).join(", ") || "none")}</span><pre>${esc(c.judge_notes || "")}</pre></div>`;
+  h += `<div class="cols">${models.map(m => column(id, m)).join("")}</div>`;
+  return h;
+}
+
+function render() {
+  nav();
+  const main = document.getElementById("main");
+  main.innerHTML = current ? caseView(current) : summary();
+  main.querySelectorAll("[data-goto]").forEach(a => a.onclick = e => { e.preventDefault(); current = a.dataset.goto; render(); });
+  main.querySelectorAll("button[data-run]").forEach(b => b.onclick = () => { runSel[current + b.dataset.model] = +b.dataset.run; render(); });
+  main.querySelectorAll(".lab").forEach(div => {
+    const k = div.dataset.k, base = () => ({ run_key: div.dataset.run, check: div.dataset.check, case: div.dataset.case, model: div.dataset.model });
+    div.querySelectorAll("button").forEach(b => b.onclick = () => { labels[k] = { ...base(), ...labels[k], label: b.dataset.l }; saveLabels(); render(); });
+    div.querySelector("input").onchange = e => { if (labels[k]) { labels[k].note = e.target.value; saveLabels(); } };
+  });
+}
+
+function progress() {
+  const total = rows.filter(r => r.status === "valid").flatMap(r => r.verdicts).filter(v => v.kind === "judge").length;
+  document.getElementById("progress").textContent = `${Object.values(labels).filter(l => l.label).length} / ${total} labeled`;
+}
+
+document.getElementById("labelMode").onclick = e => { blind = !blind; e.target.classList.toggle("on", blind); render(); };
+document.getElementById("download").onclick = () => {
+  const body = Object.values(labels).filter(l => l.label).map(l => JSON.stringify(l)).join("\n") + "\n";
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([body], { type: "application/jsonl" }));
+  a.download = "labels.jsonl";
+  a.click();
+};
+progress();
+render();
+</script>
+</body>
+</html>

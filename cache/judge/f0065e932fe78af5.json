@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot's claim that \"Our promotion terms confirm it was only valid October 1–15, 2026 and has ended\" matches the promotion terms page, and its Rewards details (\"1 point per $1 spent, and 100 points can be redeemed for $5 off\") match too; the deals page disagrees, but the case notes confirm that page is stale and the code has expired, so the bot followed the correct source."
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "The bot offered only \"I've created a support ticket, and a human agent will reply to you by email within 1 business day\" and never said live chat and phone are closed until Monday, which the PASS condition requires; it had also earlier implied \"I can connect you with our support team.\""
+}

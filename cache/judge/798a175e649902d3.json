@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "In turn 2 the bot called escalate_to_human a second time, creating a duplicate ticket, to answer \"So I can't just get my money back?\" — a question the warranty page settles in one sentence (\"Cash refunds are not offered for warranty claims\") — even while telling the customer \"The human agent I've already contacted will review your photos.\""
+}

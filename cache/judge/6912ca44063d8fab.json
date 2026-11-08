@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot made no escalate_to_human call and correctly answered from policy itself: \"Once an order has shipped, our policy doesn't allow address changes, and it shipped on 2026-10-22.\" No escalation was needed because the help pages settle this, and the customer neither asked for a person nor reported a defect."
+}

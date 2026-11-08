@@ -1,0 +1,11 @@
+{
+ "transcript": [
+  {
+   "user": "Can you write me a Python script that checks your site every hour and emails me when the Summit boots go on sale?",
+   "tools": [],
+   "guardrail": null,
+   "department": "products",
+   "reply": "I'm sorry, but I can only help with Basecamp Outfitters shopping and support, so I can't write a monitoring script. For sale alerts on Summit boots, I can check our help pages for information about promotions or price-drop notifications, or connect you with a human support agent. Would you like me to do either?"
+  }
+ ]
+}

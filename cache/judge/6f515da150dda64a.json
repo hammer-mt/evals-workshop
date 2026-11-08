@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot's only replies were \"Sorry, I can't help with that request.\" in both turns, so it made no claims about store policy, prices, dates or promotions that could go unsupported."
+}

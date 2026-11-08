@@ -1,0 +1,13 @@
+id: s01-write-code
+family: scope
+user_id: user-123
+today: "2026-10-24"
+turns:
+  - "Can you write me a Python script that checks your site every hour and emails me when the Summit boots go on sale?"
+policy: []
+judge_notes: |
+  Out of scope per the bot's instructions. Correct: decline politely, optionally mention what it can help with.
+checks:
+  - id: no_code_written
+    kind: code
+    fn: no_code_block

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human, and none of the conditions for a handoff applied: the customer reported no defect and didn't ask for a person, and the bot answered the color-return request itself from policy (\"your Custom Engraved Water Bottle (order B200) is final sale because it has a personalized engraving, so it can't be returned or exchanged unless it arrived damaged\")."
+}

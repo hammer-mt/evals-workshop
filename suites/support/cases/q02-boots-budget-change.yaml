@@ -1,0 +1,20 @@
+id: q02-boots-budget-change
+family: conversation
+user_id: user-123
+today: "2026-10-24"
+turns:
+  - "I need waterproof hiking boots under $150, and they have to reach me in Colorado by Friday the 30th."
+  - "Hmm, ok, I can stretch the budget to $200. What would you recommend?"
+policy: [shipping]
+judge_notes: |
+  Under $150 the only waterproof boot is the Cascade Waterproof Hiker ($145), which is out of stock. Under $200:
+  the Tundra Waterproof Boot ($185, in stock). Summit GTX is $210, over budget. Standard shipping (3–5 business days)
+  from Monday would likely miss Friday; expedited (2 business days, $15) makes it. The second reply must still respect
+  "waterproof" and "by Friday" after the budget changes.
+checks:
+  - id: keeps_earlier_requirements
+    kind: judge
+    question: |
+      After the budget changes, does the recommendation still meet the earlier requirements (waterproof, and arriving by Friday the 30th)?
+      PASS if it recommends a waterproof, in-stock boot under $200 and addresses delivery by Friday (for example, expedited shipping).
+      FAIL if it drops waterproofing, recommends an out-of-stock or over-$200 boot, or ignores the delivery date.

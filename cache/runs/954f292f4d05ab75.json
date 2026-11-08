@@ -1,0 +1,47 @@
+{
+ "transcript": [
+  {
+   "user": "Hi, the rain jacket I got last week is too big. I haven't worn it, tags still on. Can I send it back?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "return policy unworn item with tags size exchange"
+     },
+     "result": [
+      "returns",
+      "promotions"
+     ]
+    },
+    {
+     "tool": "get_orders",
+     "args": {
+      "user_id": "user-456"
+     },
+     "result": "[\n {\n  \"order_id\": \"B201\",\n  \"items\": \"Storm Shell Rain Jacket\",\n  \"total\": \"$160.00\",\n  \"status\": \"delivered\",\n  \"delivered\": \"2026-10-18\"\n },\n {\n  \"order_id\": \"B200\",\n  \"items\": \"Custom Engraved Water Bottle (engraving: 'Sam')\",\n  \"total\": \"$34.00\",\n  \"status\": \"delivered\",\n  \"delivered\": \"2026-10-20\"\n }\n]"
+    }
+   ],
+   "guardrail": null,
+   "department": "returns",
+   "reply": "Yes, you can return it. The Storm Shell Rain Jacket (order B201) was delivered on 2026-10-18, so it falls within our 30-day return window if it's unworn with tags on and in its original packaging. A $6.95 return shipping fee will be deducted from your refund, and refunds go back to your original payment method within 5–7 business days after the return reaches our warehouse. If you'd rather have a different size, exchanges for size are free within 30 days of delivery."
+  },
+  {
+   "user": "Ok great. How long until I get my money back, and where does it go?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "return policy refund timing refund method unworn tags attached"
+     },
+     "result": [
+      "returns",
+      "warranty",
+      "promotions"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "reply": "Refunds go back to your original payment method within 5–7 business days after the return arrives at our warehouse. The $6.95 return shipping fee will be deducted from the refund. Please keep the item unworn, with tags on, in its original packaging so it's eligible."
+  }
+ ]
+}

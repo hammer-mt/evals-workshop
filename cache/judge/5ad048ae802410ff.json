@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot answered the Canada question directly from the shipping page without handing off (\"Sorry, we only ship within the 50 US states right now.\"), and nothing in the case needed a person."
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "Every store claim the bot made matches the help pages: \"Footwear is covered against manufacturing defects like soles separating for 1 year from delivery... Cash refunds aren't offered for warranty claims, but approved claims can get a repair, a replacement, or store credit.\" The 30-day window, the bot not approving claims itself, and the photo review are also on the pages, and the \"1 business day\" reply time comes from the escalation tool's response rather than being invented."
+}

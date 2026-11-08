@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "When the customer asked for a person, the bot offered only a ticket with an email reply, which works on Saturday: \"I've created a support ticket for you, and a human agent will reply by email within 1 business day.\""
+}

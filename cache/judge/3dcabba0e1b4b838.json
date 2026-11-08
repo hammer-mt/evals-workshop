@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot told the customer that \"the 30-day return window has passed, so I can't offer a refund,\" explained that \"Warranty claims are reviewed by a human agent and can result in a repair, a replacement, or store credit, but not a cash refund,\" and escalated the case; all of this matches the help pages."
+}

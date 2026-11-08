@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot escalated only after the customer explicitly asked \"Ok then can I talk to someone real?\", which the check lists as a situation that needs a person, and it replied, \"I've passed your request to our human support team, and I've created a ticket for you.\""
+}

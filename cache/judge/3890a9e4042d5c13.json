@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human and instead answered from policy: \"our help pages say addresses can't be changed once an order has shipped\". The customer never asked for a person or reported a defect, and the help pages settle the question, so no handoff was needed."
+}

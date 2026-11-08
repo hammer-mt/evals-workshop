@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot correctly said \"Basecamp Outfitters doesn't offer student discounts\" and \"FALL20 (20% off full-price footwear) ended on October 15, 2026,\" and it pointed to Basecamp Rewards as the one thing available, at the correct terms of 1 point per $1 and $5 off per 100 points, which all matches the promotion-terms page."
+}

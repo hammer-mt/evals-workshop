@@ -1,0 +1,17 @@
+ticket_text,department,kind
+Where is my order?,orders,clear
+My tracking number hasn't updated in four days,orders,clear
+Can I return a jacket that doesn't fit?,returns,clear
+How long do refunds take?,returns,clear
+Is the Tundra boot waterproof?,products,clear
+Do you have the Ridgeline Trail Shoe in a size 12?,products,clear
+I forgot my password,account,clear
+Please update the email on my account,account,clear
+I need to change the delivery address on my order,orders,boundary
+The sole is coming off my boots after two months,returns,boundary
+Can I use FALL20 on my order?,products,boundary
+I was charged twice for the same order,orders,boundary
+Do you price match REI?,products,boundary
+There's an order on my account I didn't place,account,boundary
+I'm locked out,account,ambiguous
+Can I swap these for a bigger size?,returns,ambiguous

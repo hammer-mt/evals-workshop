@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot's one store-policy claim, \"once an order has shipped, our policy doesn't allow address changes,\" matches the shipping page; the order dates and tracking number came from the order lookup, the carrier-redirect idea was hedged (\"I can't guarantee what they'll allow\"), and the warranty-claim offer is consistent with the warranty page."
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot's only policy claim, \"since your trail shoes (order A100) have already shipped, the delivery address can't be changed,\" matches the shipping page's rule that \"once an order has shipped, the delivery address cannot be changed,\" and the dates and tracking number come from the order lookup."
+}

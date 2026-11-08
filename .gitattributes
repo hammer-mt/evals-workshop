@@ -1,0 +1,5 @@
+# Cache keys hash file contents. Keep line endings identical on every OS so a Windows
+# checkout replays the same cache entries as a Mac one.
+* text=auto eol=lf
+*.png binary
+*.jpg binary

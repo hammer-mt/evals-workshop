@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot stays courteous and empathetic in both turns, opening with \"I'm sorry the color isn't what you wanted\" and responding to the exception request with \"I understand it's barely used, but I can't make an exception.\" (Its incorrect turn-2 claim that it never looked up the order is a separate accuracy problem, not a tone problem.)"
+}

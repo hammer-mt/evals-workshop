@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot said, \"Your order B200 is a custom engraved item (engraved with \"Sam\"), and personalized items are final sale unless they arrive damaged,\" so it gave the personalization reason and did not start a return."
+}

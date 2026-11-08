@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot labeled its delivery dates as estimates (\"I can't see which shipping method you picked, so those dates are estimates\"), refused the address change, and described the return option only on the published terms (unworn, 30 days, $6.95 fee), with no exceptions or extra refunds promised."
+}

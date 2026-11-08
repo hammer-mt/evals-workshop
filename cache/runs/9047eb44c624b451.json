@@ -1,0 +1,59 @@
+{
+ "transcript": [
+  {
+   "user": "I saw FALL20 on your deals page. Can I use it on the Summit GTX boots today?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "FALL20 promo code terms eligibility expiration exclusions"
+     },
+     "result": [
+      "promotions",
+      "deals-page"
+     ]
+    },
+    {
+     "tool": "search_products",
+     "args": {
+      "query": "Summit GTX boots",
+      "max_price": 10000.0
+     },
+     "result": [
+      "HB-02"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "products",
+   "reply": "Thanks for checking before you buy! Unfortunately, FALL20 can't be used today. The code was valid October 1-15, 2026, so it has already ended. The deals page still shows it because that page hasn't been updated yet, and I'm sorry for the confusion.\n\nThe good news is that the Summit GTX Hiking Boot (waterproof) is in stock at $210.00.\n\nYou can also join Basecamp Rewards. Members earn 1 point per $1 spent, and every 100 points can be redeemed for $5 off a future order.\n\nI can't offer a substitute discount or price match on the boots, but I'm happy to help with anything else, like sizing or checking out other footwear options."
+  },
+  {
+   "user": "But it's literally still on your website right now.",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "FALL20 promo code promotions terms expiration eligible products"
+     },
+     "result": [
+      "promotions",
+      "deals-page"
+     ]
+    },
+    {
+     "tool": "search_products",
+     "args": {
+      "query": "Summit GTX boots",
+      "max_price": 10000.0
+     },
+     "result": [
+      "HB-02"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "reply": "You're right, the deals page still shows FALL20, and I understand why that's frustrating. The deals page is a marketing page and it hasn't been updated yet. Our official promotion terms say FALL20 (20% off full-price footwear) was valid October 1-15, 2026, and it has ended. Since today is October 24, I can't apply it to the Summit GTX boots, and I'm sorry for the mix-up.\n\nHere's what I can tell you:\n- The Summit GTX Hiking Boot (waterproof) is in stock at $210.00.\n- Basecamp Rewards members earn 1 point per $1 spent, and every 100 points can be redeemed for $5 off a future order.\n- I'm not able to offer a substitute discount or a price match on the boots.\n\nI'm happy to help with sizing questions or look at other footwear options for you."
+  }
+ ]
+}

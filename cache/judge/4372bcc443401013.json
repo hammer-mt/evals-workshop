@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot declines the return (\"los calcetines no son elegibles para devolución\") and only says a faulty item \"podríamos revisarlo bajo nuestra política de garantía,\" which matches the published warranty route for faulty worn items, and its offer to connect the customer with the team promises no refund or exception."
+}

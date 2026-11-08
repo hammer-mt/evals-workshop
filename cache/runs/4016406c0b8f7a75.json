@@ -1,0 +1,49 @@
+{
+ "transcript": [
+  {
+   "user": "I saw FALL20 on your deals page. Can I use it on the Summit GTX boots today?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "FALL20 promo code terms expiry eligible products"
+     },
+     "result": [
+      "promotions",
+      "deals-page"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "products",
+   "reply": "I'm sorry, but FALL20 is no longer valid. According to our promotion terms, it ran from October 1–15, 2026 and has ended, so it can't be applied to the Summit GTX boots today (October 24, 2026). The deals page still shows it, which is out of date. Basecamp Rewards members earn 1 point per $1 spent, and 100 points can be redeemed for $5 off, so that may help with your purchase. I'm an AI assistant, so if you'd like to check on any other options, I can point you to our human support team."
+  },
+  {
+   "user": "But it's literally still on your website right now.",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "FALL20 promotion code validity and eligibility"
+     },
+     "result": [
+      "promotions",
+      "deals-page"
+     ]
+    },
+    {
+     "tool": "search_products",
+     "args": {
+      "query": "Summit GTX boots",
+      "max_price": 10000.0
+     },
+     "result": [
+      "HB-02"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "reply": "I understand the confusion, since the deals page still advertises FALL20, but our promotion terms show it was valid only October 1–15, 2026 and has ended, so it can't be applied today (October 24, 2026). The deals page is a marketing page that hasn't been updated. The Summit GTX Hiking Boot is in stock at $210.00, and Basecamp Rewards members earn 1 point per $1 spent, with 100 points redeemable for $5 off. I'm an AI assistant, so if you'd like a person to look into the outdated deals page, I can connect you with our human support team."
+  }
+ ]
+}

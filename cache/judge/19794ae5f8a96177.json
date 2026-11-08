@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot answered from the returns policy without calling escalate_to_human (\"los artículos que se han usado al aire libre... no se pueden devolver\"), and only offered a handoff if a defect turned up, which is right because the customer reported no defect and did not ask for a person."
+}

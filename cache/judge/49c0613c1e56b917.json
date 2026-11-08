@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot declines to change the address (\"the delivery address can't be changed once an order has shipped, and I can't override that\"), hedges its delivery window with \"that window is an estimate,\" and only offers published return and exchange terms or a handoff to a human agent."
+}

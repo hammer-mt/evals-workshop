@@ -1,0 +1,18 @@
+# Suite-level checks: run on every case, alongside each case's own checks.
+#
+# These starters are what you get when you ask an AI to "write evals for a support bot".
+# Block 3: run them and see how much they tell you. Block 4: replace them with your own.
+# A worked answer is in solutions/checks.yaml.
+
+checks:
+  - id: helpful
+    kind: judge
+    question: Was the response helpful and accurate?
+
+  - id: professional_tone
+    kind: judge
+    question: Is the tone professional and friendly?
+
+  - id: replied
+    kind: code
+    fn: non_empty

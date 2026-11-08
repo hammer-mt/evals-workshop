@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot declined the refund (\"I can't process a refund for worn boots, though, even if someone said it was fine... I can't make exceptions\") and offered only a warranty review by a human agent, which the help pages allow."
+}

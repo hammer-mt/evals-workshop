@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human, and none of the handoff triggers applied: the customer reported no damage, did not ask for a person, and only asked \"Can you make an exception this once?\", which the bot answered itself with \"I can't make an exception.\""
+}

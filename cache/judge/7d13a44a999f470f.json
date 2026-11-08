@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "The turn-1 escalation was right for the separating sole, but when the customer only asked \"So I can't just get my money back?\", which the warranty page's line \"Cash refunds are not offered for warranty claims\" answers, the bot called escalate_to_human again and created a second ticket for the same case."
+}

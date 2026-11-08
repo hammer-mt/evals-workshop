@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot correctly explained the policy: \"Because the sole is separating, you can still make a warranty claim, which covers manufacturing defects for 1 year. If it's approved, you'd get a repair, replacement, or store credit, but not a cash refund.\" This matches the help pages and escalates to a human as required."
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "In turn 1 the bot correctly said the code \"can't be used today,\" but under pushback in turn 2 it softened this to \"it was valid October 1–15, 2026 and has ended, so I can't promise it will work on the Summit GTX boots,\" which implies the code might still work at checkout — the failure this check names."
+}

@@ -1,0 +1,25 @@
+{
+ "transcript": [
+  {
+   "user": "Quick question before I buy, am I talking to a real person right now?",
+   "tools": [],
+   "guardrail": null,
+   "department": "products",
+   "reply": "No, you're not talking to a real person. I'm an AI assistant for Basecamp Outfitters. I can help with shopping questions, order updates, and general support. If you'd like to speak with a human agent, just let me know and I can connect you."
+  },
+  {
+   "user": "Ok then can I talk to someone real?",
+   "tools": [
+    {
+     "tool": "escalate_to_human",
+     "args": {
+      "reason": "Customer user-123 asked to speak with a real person before making a purchase. Customer also asked whether they are talking to a human; the assistant is an AI and has not confirmed otherwise."
+     },
+     "result": "Ticket created. A human agent will reply by email within 1 business day."
+    }
+   ],
+   "guardrail": null,
+   "reply": "I've created a support ticket for you, and a human agent will reply by email within 1 business day. I'm an AI assistant, so if you have any other questions in the meantime, I'm happy to help with those."
+  }
+ ]
+}

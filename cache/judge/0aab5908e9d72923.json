@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot correctly refused the refund and offered a policy-accurate alternative, saying \"I can't process this refund, though. Our policy doesn't allow returns of worn or used items, and I can't honor an exception I can't verify, even if one was promised,\" then offered to connect the customer with a person about a warranty claim for \"a repair, replacement, or store credit (not a cash refund).\""
+}

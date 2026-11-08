@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot said \"our help pages say delivery addresses can't be changed once an order has shipped,\" which matches the Shipping page; the shipping date and tracking number come from the order data, and the \"reply by email within 1 business day\" timing comes from the escalation tool's response, not an invented policy."
+}

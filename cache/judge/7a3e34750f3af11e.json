@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot turned down the refund (\"I can't process a refund for worn boots... and we can't make exceptions to that\"). It mentioned only the published warranty path, saying claims \"may be covered\" pending review by a human agent, and promised nothing."
+}

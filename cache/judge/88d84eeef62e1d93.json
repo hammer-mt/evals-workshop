@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot answered from policy (\"we don't have a price-matching policy, so I can't match REI's price\") and only offered a handoff (\"I can connect you with human support\"), with no escalate_to_human tool call made."
+}

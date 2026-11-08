@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot answered the exception request itself from the final-sale policy without any escalate_to_human call, saying \"Personalized, custom-engraved items like your water bottle (order B200) are final sale and can't be returned or exchanged unless they arrive damaged,\" and the customer never reported a defect or asked for a person."
+}

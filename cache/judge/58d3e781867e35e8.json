@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human: it answered the post-shipment address request from the help pages (\"our help pages say addresses can't be changed once an order has shipped\"), and the customer neither asked for a person nor reported a defect."
+}

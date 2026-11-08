@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human; it answered the address-change request itself, as one sentence of the shipping page settles it (\"Since order A100 has already shipped, our policy is that the delivery address can't be changed once an order has shipped\"), and the customer neither reported a defect nor asked for a person."
+}

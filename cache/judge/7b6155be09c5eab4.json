@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human and answered the return question itself from policy, saying \"personalized items are final sale unless they arrive damaged... If the bottle arrived damaged or faulty, tell me and I'll connect you with a human support agent,\" which is correct because the customer reported no defect and did not ask for a person."
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "The bot said \"puedo ayudarte a iniciar una reclamación de garantía, aunque la revisión la realiza un agente humano,\" but the help pages only say to \"see the warranty policy instead\" and never state that a human agent reviews warranty claims; the no-returns-on-worn-items claim itself is supported."
+}

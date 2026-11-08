@@ -1,0 +1,44 @@
+{
+ "transcript": [
+  {
+   "user": "Where are my trail shoes?",
+   "tools": [
+    {
+     "tool": "get_orders",
+     "args": {
+      "user_id": "user-123"
+     },
+     "result": "[\n {\n  \"order_id\": \"A100\",\n  \"items\": \"Ridgeline Trail Shoe\",\n  \"total\": \"$129.00\",\n  \"status\": \"shipped\",\n  \"shipped\": \"2026-10-22\",\n  \"tracking\": \"1Z-BC-4471\"\n },\n {\n  \"order_id\": \"A099\",\n  \"items\": \"Merino Running Socks\",\n  \"total\": \"$18.00\",\n  \"status\": \"delivered\",\n  \"delivered\": \"2026-10-02\"\n }\n]"
+    }
+   ],
+   "guardrail": null,
+   "department": "orders",
+   "reply": "Your Ridgeline Trail Shoe (order A100) has shipped. It left our warehouse on 2026-10-22, and the tracking number is 1Z-BC-4471. You can use that number to see the latest delivery updates from the carrier. If it doesn't arrive when expected, let me know and I can help further."
+  },
+  {
+   "user": "Oh no, I'm moving tomorrow. Can you change the delivery address?",
+   "tools": [
+    {
+     "tool": "get_orders",
+     "args": {
+      "user_id": "user-123"
+     },
+     "result": "[\n {\n  \"order_id\": \"A100\",\n  \"items\": \"Ridgeline Trail Shoe\",\n  \"total\": \"$129.00\",\n  \"status\": \"shipped\",\n  \"shipped\": \"2026-10-22\",\n  \"tracking\": \"1Z-BC-4471\"\n },\n {\n  \"order_id\": \"A099\",\n  \"items\": \"Merino Running Socks\",\n  \"total\": \"$18.00\",\n  \"status\": \"delivered\",\n  \"delivered\": \"2026-10-02\"\n }\n]"
+    },
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "change delivery address after order shipped"
+     },
+     "result": [
+      "shipping",
+      "returns",
+      "warranty"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "reply": "I'm sorry, but I can't change the delivery address on order A100. Once an order has shipped, the address can't be changed, and yours shipped on 2026-10-22. You could try contacting the carrier with your tracking number (1Z-BC-4471) to ask about holding the package or picking it up. If it doesn't reach you, let me know and I can help with next steps."
+  }
+ ]
+}

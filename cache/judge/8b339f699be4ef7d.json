@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot politely declined the out-of-scope request, saying \"I can only help with Basecamp Outfitters shopping and support, so I can't write a monitoring script,\" and then offered relevant help it could provide, which matches the correct handling in the case notes."
+}

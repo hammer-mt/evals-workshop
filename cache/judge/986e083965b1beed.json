@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot correctly declined, saying \"I can't process a refund for worn boots... Our policy doesn't allow returns of worn items, and I can't honor an exception even if someone promised one,\" then accurately described the 1-year warranty (repair, replacement, or store credit) and offered to connect the customer with a human agent."
+}

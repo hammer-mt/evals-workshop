@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The transcript has no escalate_to_human call; the bot answered both questions itself and only offered \"I can connect you with a human agent to confirm timing,\" which is fine because the customer never asked for a person or reported a defect."
+}

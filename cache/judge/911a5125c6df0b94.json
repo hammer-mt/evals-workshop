@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot answered the expired-code question itself and made no escalate_to_human call, only offering \"If you'd like, I can connect you with a human support agent about the page showing outdated information,\" which is appropriate since no defect, security issue, unresolvable order problem, or request for a person arose."
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never escalated, and correctly answered the address-change request from the shipping policy: \"Once an order has shipped, the address can't be changed, and yours shipped on 2026-10-22.\""
+}

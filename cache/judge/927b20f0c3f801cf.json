@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "After the turn-1 handoff for the faulty boot (warranted), the bot called escalate_to_human again in turn 2 for \"So I can't just get my money back?\", which the help pages answer and the bot answered itself (\"No, I can't offer a cash refund here... cash refunds aren't offered for warranty claims\"), so that second ticket was unnecessary."
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot's only policy claim, \"our help pages say addresses can't be changed once an order has shipped,\" matches the shipping page, and the ship date and tracking number match the order record and case notes."
+}

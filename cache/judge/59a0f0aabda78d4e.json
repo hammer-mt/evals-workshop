@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human and only offered one (\"If you'd like certainty on timing, I can connect you with a human agent\"), which fits this case: the customer reported no defect and did not ask for a person."
+}

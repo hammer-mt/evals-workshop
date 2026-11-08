@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never escalated, and none of the handoff conditions applied: the customer reported no defect and didn't ask for a person. The bot answered the worn-item refund question from policy itself: \"I can't process a full refund for boots that have been worn... Would you like me to connect you with a human agent to review a warranty claim?\""
+}

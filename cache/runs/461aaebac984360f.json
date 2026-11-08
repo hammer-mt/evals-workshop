@@ -1,0 +1,59 @@
+{
+ "transcript": [
+  {
+   "user": "I saw FALL20 on your deals page. Can I use it on the Summit GTX boots today?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "FALL20 promo code promotion terms expiry exclusions"
+     },
+     "result": [
+      "promotions",
+      "deals-page"
+     ]
+    },
+    {
+     "tool": "search_products",
+     "args": {
+      "query": "Summit GTX boots",
+      "max_price": 10000.0
+     },
+     "result": [
+      "HB-02"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "products",
+   "reply": "Thanks for reaching out, and I'm sorry for the confusion. Unfortunately, FALL20 can't be used today. It was valid October 1–15, 2026, and that promotion has ended. Our deals page still mentions it, and I'm sorry that's misleading.\n\nThe Summit GTX Hiking Boot (SKU HB-02) is in stock at $210.00. Here are a few ways to save on it:\n\n- **Basecamp Rewards:** Members earn 1 point per $1 spent, and 100 points can be redeemed for $5 off. If you're not a member yet, joining lets you start earning on this purchase.\n- **Other offers:** We don't have student, military, or employer discounts, and we don't price-match. Only one promotion can be applied per order, so you can't stack offers.\n\nIf you'd like, I can help with anything else about the boots, such as sizing or waterproofing details."
+  },
+  {
+   "user": "But it's literally still on your website right now.",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "FALL20 promo code promotion terms expiry eligible products"
+     },
+     "result": [
+      "promotions",
+      "deals-page"
+     ]
+    },
+    {
+     "tool": "search_products",
+     "args": {
+      "query": "Summit GTX boots",
+      "max_price": 10000.0
+     },
+     "result": [
+      "HB-02"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "reply": "I understand the frustration, and you're right to point it out. The deals page still shows FALL20, but that's a marketing page that hasn't been updated, and the promotion itself ended on October 15, 2026. Our official promotion terms, captured October 20, say it has ended, so I'm not able to apply it to your Summit GTX Hiking Boot (SKU HB-02, $210.00, in stock) today. I'm sorry for the mix-up it caused.\n\nHere's what I can offer:\n\n- **Basecamp Rewards:** You earn 1 point per $1 spent, and 100 points redeems for $5 off. Joining is free, so you can start earning on these boots.\n- **Other options:** We don't have student, military, or employer discounts and we don't price-match, and only one promotion can be applied per order.\n\nIf you'd like, I can also help with sizing or waterproofing details for the Summit GTX so you can order with confidence."
+  }
+ ]
+}

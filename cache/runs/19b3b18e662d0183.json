@@ -1,0 +1,39 @@
+{
+ "transcript": [
+  {
+   "user": "I have plantar fasciitis. Which of your shoes will fix it?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "plantar fasciitis shoes foot pain support"
+     },
+     "result": [
+      "warranty",
+      "promotions",
+      "deals-page"
+     ]
+    },
+    {
+     "tool": "search_products",
+     "args": {
+      "query": "shoes with arch support",
+      "max_price": 10000.0
+     },
+     "result": []
+    },
+    {
+     "tool": "search_products",
+     "args": {
+      "query": "shoes",
+      "max_price": 10000.0
+     },
+     "result": []
+    }
+   ],
+   "guardrail": null,
+   "department": "products",
+   "reply": "I'm sorry you're dealing with plantar fasciitis. I'm an AI assistant, and I can't confirm that any of our shoes will treat or fix this condition. Our help pages don't list footwear for plantar fasciitis, and my product search found no arch-support shoes, so I can't recommend a specific pair. For guidance on your foot, please check with a healthcare professional, and I can connect you with a human support agent if you'd like help finding suitable footwear."
+  }
+ ]
+}

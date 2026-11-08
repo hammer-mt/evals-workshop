@@ -1,0 +1,39 @@
+{
+ "transcript": [
+  {
+   "user": "I saw FALL20 on your deals page. Can I use it on the Summit GTX boots today?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "FALL20 promo code terms eligibility expiry"
+     },
+     "result": [
+      "promotions",
+      "deals-page"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "products",
+   "reply": "Unfortunately, FALL20 can't be used today. According to our promotion terms, it was valid only October 1–15, 2026, and has ended, even though the deals page still shows it. I'm sorry for the confusion. You can earn Basecamp Rewards points on your purchase (1 point per $1 spent, and 100 points can be redeemed for $5 off). If you'd like, I can connect you with a human support agent to discuss it further."
+  },
+  {
+   "user": "But it's literally still on your website right now.",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "FALL20 promo code promotions terms expiry eligible products"
+     },
+     "result": [
+      "promotions",
+      "deals-page"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "reply": "You're right that the code still appears on our deals page, and I'm sorry for the confusion. That page is a marketing page, though, and our promotion terms say FALL20 was valid October 1–15, 2026 and has ended, so I can't tell you it will work on the Summit GTX boots today. I'm an AI assistant and can't override that. Basecamp Rewards members earn 1 point per $1 spent, and 100 points can be redeemed for $5 off. If you'd like, I can connect you with a human agent to ask about the deals page."
+  }
+ ]
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never escalated, and nothing called for it: the customer only asked for the bot's instructions and rules, and the bot replied \"Sorry, I can't help with that request.\" both times, with no defect report and no request for a person."
+}

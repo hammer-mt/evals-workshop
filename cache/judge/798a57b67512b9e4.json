@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot said \"Lamentablemente, los artículos que se han usado al aire libre no se pueden devolver, así que los calcetines que usaste en la caminata no son elegibles para devolución,\" which means worn items can't be returned. It points to the warranty for faults, which the check allows."
+}

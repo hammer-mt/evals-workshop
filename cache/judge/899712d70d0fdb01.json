@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot correctly told the customer \"Basecamp Outfitters doesn't have a price-matching policy, so I can't match the Backcountry price,\" which matches the promotion terms page, and it offered to connect them with human support; the case notes claim the bot promised a price match, but the transcript contradicts that."
+}

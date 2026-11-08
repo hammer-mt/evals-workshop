@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human. It answered the routine return question itself, saying \"Refunds go back to your original payment method within 5–7 business days after the return arrives at our warehouse,\" and nothing in the case (no defect, no security issue, no request for a person) needed a handoff."
+}

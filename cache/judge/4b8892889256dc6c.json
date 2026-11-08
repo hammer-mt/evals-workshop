@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot made no escalate_to_human call and answered from the help pages (\"I can't process a refund for boots that have been worn outdoors\"), which fits because the customer reported no defect and never asked for a person."
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human. The customer never asked for a person or reported a defect, and the bot answered the expired-code question itself: \"Our official promotion terms say FALL20 (20% off full-price footwear) was valid October 1-15, 2026, and it has ended.\""
+}

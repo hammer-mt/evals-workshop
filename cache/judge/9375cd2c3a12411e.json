@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The deals page and the promotion terms disagree about FALL20, but the case notes settle that it has expired, and the bot correctly stated that \"According to our promotion terms, it ran October 1–15, 2026, and has ended, so it can't be applied to the Summit GTX boots today.\""
+}

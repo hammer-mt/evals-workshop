@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human; it answered the policy question itself (\"personalized items are final sale and can't be returned or exchanged unless they arrive damaged\") and offered a handoff only if the item turned out damaged, which the customer never reported."
+}

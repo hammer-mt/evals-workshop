@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot turned down the request, saying \"I'm sorry, I can't change the delivery address for order A100 (Ridgeline Trail Shoe)... our help pages say addresses can't be changed once an order has shipped,\" and only offered to connect a human agent without promising any exception, refund, or delivery date."
+}

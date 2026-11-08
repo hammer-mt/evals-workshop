@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot answered both questions itself with no escalate_to_human call, for example: \"Sorry, there isn't a promotion code you can use today. FALL20 was valid October 1–15, 2026, and it has ended.\" No defect, security problem, unresolved order issue, or request for a person came up, so no handoff was needed."
+}

@@ -1,0 +1,10 @@
+[
+  {"sku": "TS-01", "name": "Ridgeline Trail Shoe", "category": "footwear", "price": 129.0, "waterproof": false, "in_stock": true},
+  {"sku": "HB-02", "name": "Summit GTX Hiking Boot", "category": "footwear", "price": 210.0, "waterproof": true, "in_stock": true},
+  {"sku": "HB-03", "name": "Cascade Waterproof Hiker", "category": "footwear", "price": 145.0, "waterproof": true, "in_stock": false},
+  {"sku": "HB-04", "name": "Mesa Light Hiker", "category": "footwear", "price": 119.0, "waterproof": false, "in_stock": true},
+  {"sku": "HB-05", "name": "Tundra Waterproof Boot", "category": "footwear", "price": 185.0, "waterproof": true, "in_stock": true},
+  {"sku": "RJ-01", "name": "Storm Shell Rain Jacket", "category": "outerwear", "price": 160.0, "waterproof": true, "in_stock": true},
+  {"sku": "WB-01", "name": "Custom Engraved Water Bottle", "category": "accessories", "price": 34.0, "waterproof": true, "in_stock": true},
+  {"sku": "SK-01", "name": "Merino Running Socks", "category": "accessories", "price": 18.0, "waterproof": false, "in_stock": true}
+]

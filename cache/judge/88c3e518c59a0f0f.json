@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot said, \"order A100 has already shipped on October 22, and our help pages say delivery addresses can't be changed once an order has shipped,\" and only escalated so a human could check \"whether the carrier can redirect the package,\" never claiming that it or a human could change the address."
+}

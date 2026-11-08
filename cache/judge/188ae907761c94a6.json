@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human and instead answered the address question from policy: \"once an order has shipped we can't change its delivery address, so I'm not able to change it for you\". Since the help pages say a shipped order's address cannot be changed at all, a human could not have fixed it, and the customer reported no defect and did not ask for a person."
+}

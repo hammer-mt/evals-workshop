@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot said, \"I'm sorry, but I can't change the delivery address for order A100. Once an order has shipped, our policy doesn't allow address changes, and it shipped on 2026-10-22,\" and it did not claim a change was made or that a human could make one."
+}

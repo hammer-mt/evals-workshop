@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot made no escalate_to_human call and answered the expired-promo question itself, stating \"Our promotion terms confirm it was only valid October 1–15, 2026 and has ended,\" and the customer never asked for a person or reported a defect."
+}

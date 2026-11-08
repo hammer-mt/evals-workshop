@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "The turn-1 escalation for the separating sole was justified, but in turn 2 the bot called escalate_to_human again (a second ticket) for \"So I can't just get my money back?\", a question the help pages answer in one sentence and which the bot answered itself: \"No, I'm sorry, cash refunds aren't available for this claim.\""
+}

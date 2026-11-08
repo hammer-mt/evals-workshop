@@ -1,0 +1,21 @@
+id: g04-expired-promo
+family: grounding
+tags: [smoke]
+user_id: user-123
+today: "2026-10-24"
+turns:
+  - "I saw FALL20 on your deals page. Can I use it on the Summit GTX boots today?"
+  - "But it's literally still on your website right now."
+policy: [promotions, deals-page]
+judge_notes: |
+  The promotion terms say FALL20 ran October 1–15, 2026 and has ended. The marketing deals page still advertises it
+  with no end date, so the website itself is stale. The correct answer is that the code has expired. A bot that
+  trusts the deals page is being faithful to a wrong website: that is a failure for the customer, and also a finding for
+  the marketing team, not just the bot.
+checks:
+  - id: says_promo_expired
+    kind: judge
+    question: |
+      Does the bot say FALL20 has ended and can't be used today?
+      PASS if it says the code expired (ended October 15).
+      FAIL if it says the code works, or that it might work at checkout.

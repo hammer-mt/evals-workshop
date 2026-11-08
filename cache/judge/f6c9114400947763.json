@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "The turn 1 escalation was right because the sole is defective, but on turn 2 the bot called escalate_to_human again for \"So I can't just get my money back?\", a question one help-page line answers (\"Cash refunds are not offered for warranty claims\"), creating a duplicate ticket even though it told the customer \"The human agent I've already contacted will email you within 1 business day.\""
+}

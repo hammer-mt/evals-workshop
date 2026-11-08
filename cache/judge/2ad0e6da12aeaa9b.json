@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot correctly applied the shipping policy and offered next steps: \"I'm sorry, but since your order A100 has already shipped, the delivery address can't be changed. Our policy only allows address changes before an order ships.\""
+}

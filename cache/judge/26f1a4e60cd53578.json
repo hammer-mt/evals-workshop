@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot refuses the address change in line with policy (\"our policy doesn't allow the delivery address to be changed after an order has shipped. I can't change it for you\"), and its offer to connect the customer with a human agent promises no exception, refund, or delivery date."
+}

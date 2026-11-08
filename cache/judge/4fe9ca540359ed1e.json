@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "The bot quoted the help-page rule that \"delivery addresses can't be changed once an order has shipped,\" which settles the question, but still escalated anyway: \"I've created a ticket for a human agent to look into whether the carrier can redirect the package.\""
+}

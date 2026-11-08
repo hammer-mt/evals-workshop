@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot's only policy claim, \"our policy doesn't allow the delivery address to be changed after an order has shipped,\" matches the shipping page, and the order details (shipped October 22, 2026, tracking 1Z-BC-4471) come from the order lookup and the case notes."
+}

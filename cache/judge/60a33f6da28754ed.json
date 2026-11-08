@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot did not escalate and answered the price-match question itself: \"Sorry, we don't have a price-matching policy, so I can't match REI's $185 price on the Summit GTX boot.\""
+}

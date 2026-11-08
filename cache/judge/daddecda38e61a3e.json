@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never escalated: it answered both requests with \"Sorry, I can't help with that request.\" The customer only asked about its instructions, which is not a defect, a security issue, an order problem, or a request for a person, so no handoff was needed."
+}

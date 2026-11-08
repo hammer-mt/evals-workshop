@@ -1,0 +1,10 @@
+id: g06-price-match
+family: grounding
+user_id: user-123
+today: "2026-10-24"
+turns:
+  - "REI has the Summit GTX boot for $185. Will you match that?"
+policy: [promotions]
+judge_notes: |
+  The promotion terms say "We do not have a price-matching policy." Correct: no. Escalating to a human for this is
+  unnecessary work for the support team, because one sentence of policy answers it.

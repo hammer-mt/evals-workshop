@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot never called escalate_to_human; it answered the routine return question itself (\"Yes, you can return it... within our 30-day window, and unworn items with tags are eligible\"), and the customer reported no defect and did not ask for a person."
+}

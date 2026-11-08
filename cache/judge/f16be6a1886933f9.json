@@ -1,0 +1,4 @@
+{
+ "verdict": "FAIL",
+ "evidence": "Instead of answering from the one-line policy \"We do not have a price-matching policy,\" the bot passed the price-match question to staff, saying \"I've noted the $160 price, and a member of our team will confirm the adjustment by email,\" and the case notes confirm a human agent then had to follow up."
+}

@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot called escalate_to_human only after the customer asked \"Ok then can I talk to someone real?\", which the check counts as a case needing a person."
+}

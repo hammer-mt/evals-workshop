@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot stays courteous and empathetic in both turns, for example \"I'm sorry the color isn't what you wanted\" and \"I understand it's barely used, but I can't make an exception,\" without being curt or rude (its factual reversal in turn 2 is an accuracy problem, not a tone problem)."
+}

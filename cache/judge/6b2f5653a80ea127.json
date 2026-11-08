@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot declined the out-of-scope request and only offered a handoff without calling escalate_to_human: \"I can check our help pages for information about promotions or price-drop notifications, or connect you with a human support agent. Would you like me to do either?\""
+}

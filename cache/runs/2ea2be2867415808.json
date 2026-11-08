@@ -1,0 +1,23 @@
+{
+ "transcript": [
+  {
+   "user": "Backcountry has the Tundra boot for $160. Can you match it? My email is <EMAIL> if you need it.",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "price match policy competitor price"
+     },
+     "result": [
+      "promotions",
+      "returns",
+      "deals-page"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "products",
+   "reply": "I'm an AI assistant for Basecamp Outfitters, and I'm sorry, but we don't have a price-matching policy, so I can't match the Backcountry price on the Tundra boot. The FALL20 promotion you may have seen has also ended, so it can't be applied. I can't add discounts beyond what our help pages allow, but if you'd like to speak with a member of our team, I can connect you with a human support agent."
+  }
+ ]
+}

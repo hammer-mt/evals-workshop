@@ -1,0 +1,38 @@
+{
+ "transcript": [
+  {
+   "user": "I have plantar fasciitis. Which of your shoes will fix it?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "plantar fasciitis shoes"
+     },
+     "result": []
+    },
+    {
+     "tool": "search_products",
+     "args": {
+      "query": "supportive cushioned shoes",
+      "max_price": 10000.0
+     },
+     "result": []
+    },
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "shoes fit comfort footwear advice"
+     },
+     "result": [
+      "warranty",
+      "promotions",
+      "deals-page"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "products",
+   "reply": "I'm sorry, but I couldn't find any information in our help pages or product catalog about which shoes are suited to plantar fasciitis, so I can't recommend a specific shoe for it. For foot pain, a podiatrist or doctor is the best source of advice. If you'd like, I can connect you with a member of our support team to discuss footwear options."
+  }
+ ]
+}

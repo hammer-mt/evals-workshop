@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot correctly confirmed that the unworn jacket can be returned within 30 days, that \"A $6.95 return shipping fee will be deducted from your refund,\" and that \"Once the return arrives at our warehouse, refunds usually take 5–7 business days and go back to your original payment method,\" all of which matches the help pages."
+}

@@ -1,0 +1,34 @@
+{
+ "transcript": [
+  {
+   "user": "Hola, compré unos calcetines y los usé en una caminata. ¿Puedo devolverlos?",
+   "tools": [
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "política de devoluciones productos usados calcetines"
+     },
+     "result": [
+      "deals-page",
+      "shipping",
+      "promotions"
+     ]
+    },
+    {
+     "tool": "search_docs",
+     "args": {
+      "query": "returns policy return window used or worn items refund"
+     },
+     "result": [
+      "returns",
+      "warranty",
+      "promotions"
+     ]
+    }
+   ],
+   "guardrail": null,
+   "department": "returns",
+   "reply": "¡Hola! Lo siento, pero no podemos aceptar devoluciones de artículos que ya se han usado o desgastado al aire libre, así que no puedo ofrecerte una devolución de estos calcetines. Si los calcetines tienen un defecto de fabricación, puedo ayudarte a iniciar una reclamación de garantía, aunque la revisión la realiza un agente humano. ¿Quieres que te transfiera a un agente?"
+  }
+ ]
+}

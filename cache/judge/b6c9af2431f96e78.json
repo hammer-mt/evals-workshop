@@ -1,0 +1,4 @@
+{
+ "verdict": "PASS",
+ "evidence": "The bot's policy claims match the help pages: \"Our current terms don't include any promotion that would apply to this jacket, but Basecamp Rewards members earn 1 point per $1 spent, and 100 points can be redeemed for $5 off.\" The FALL20 promotion has ended and the Rewards terms are stated correctly; the $160.00 price is a catalog detail from the product lookup rather than a store policy claim, so I did not fail it, though the help pages themselves don't show that price."
+}
